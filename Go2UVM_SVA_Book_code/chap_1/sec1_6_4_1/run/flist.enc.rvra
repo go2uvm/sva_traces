@@ -1,0 +1,8 @@
++incdir+/proj/VWorks/VW_Go2UVM_Pkg/VW_Go2UVM_Pkg_2015.09
+/proj/VWorks/VW_Go2UVM_Pkg/VW_Go2UVM_Pkg_2015.09/uvm_src/vw_go2uvm_pkg.sv
+
+../dut/sect1_6_4_1.sv
+../tb/tb.sv
+../uvm/sect1.sv
+
+

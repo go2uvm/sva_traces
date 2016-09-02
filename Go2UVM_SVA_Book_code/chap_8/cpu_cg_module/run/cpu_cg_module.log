@@ -1,0 +1,166 @@
+asim +access +rw  $UVMSIM +UVM_VERBOSITY=UVM_FULL
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'cpu_cg_module2' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'sva_if' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'vw_go2uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'UnitScopePackage_1' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'std' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.8 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 100ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/home/student/tools/eda/Riviera-PRO_2015.06/bin/libsystf.so'
+# KERNEL: Info: Loading library:  /home/student/tools/eda/Riviera-PRO_2015.06/bin/uvm_1_1d_dpi
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: uvm.sv (75): Length of connection (1) does not match the length of port "data" (16) on instance "/top/dut".
+# SLP: Warning: uvm.sv (75): Length of connection (1) does not match the length of port "addr" (16) on instance "/top/dut".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.1 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 0 primitives and 2 (18.18%) other processes in SLP
+# SLP: 6 (0.02%) signals in SLP and 16 (0.06%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.8 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 44822 kB (elbread=22386 elab2=20115 kernel=2319 sdf=0)
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.1  d
+# KERNEL: (C) 2007-2013 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2013 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2013 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: Assertion failures tracking enabled, report enabled, unlimited, action Continue. Assertion passes tracking enabled, report disabled, unlimited.
+# KERNEL: ASDB file was created in location /home/student/Shivmurthy/chap_8_corrected/cpu_cg_module/run/dataset.asdb
+wave -rec sim:/* 
+run -all;
+# KERNEL: addr zzzz instr SUB mode FETCH resource IR2
+# KERNEL: addr zzzz instr NOP mode DECODE resource REGB
+# KERNEL: addr zzzz instr IDLE mode DECODE resource REGB
+# KERNEL: addr zzzz instr MOV mode DECODE resource IR2
+# KERNEL: addr zzzz instr IDLE mode EXECUTE resource REG_FILE
+# KERNEL: addr zzzz instr JMP mode FETCH resource REGA
+# KERNEL: addr zzzz instr ADD mode DECODE resource REGA
+# KERNEL: addr zzzz instr READ mode EXECUTE resource REGB
+# KERNEL: addr zzzz instr READ mode DECODE resource REG_FILE
+# KERNEL: addr zzzz instr WRITE mode EXECUTE resource PC
+# KERNEL: addr zzzz instr ADD mode FETCH resource REGB
+# KERNEL: addr zzzz instr JMP mode FETCH resource IR2
+# KERNEL: addr zzzz instr SUB mode FETCH resource PC
+# KERNEL: addr zzzz instr NOP mode DECODE resource PC
+# KERNEL: addr zzzz instr MOV mode EXECUTE resource IR1
+# KERNEL: addr zzzz instr JMP mode EXECUTE resource STK
+# KERNEL: addr zzzz instr READ mode DECODE resource MAR
+# KERNEL: addr zzzz instr WRITE mode FETCH resource PC
+# KERNEL: addr zzzz instr NOP mode FETCH resource PC
+# KERNEL: addr zzzz instr WRITE mode FETCH resource REGB
+# KERNEL: addr zzzz instr READ mode DECODE resource REGB
+# KERNEL: addr zzzz instr IDLE mode EXECUTE resource REGA
+# KERNEL: addr zzzz instr READ mode EXECUTE resource IR1
+# KERNEL: addr zzzz instr WRITE mode EXECUTE resource IR1
+# KERNEL: addr zzzz instr WRITE mode FETCH resource STK
+# KERNEL: addr zzzz instr MOV mode FETCH resource IR2
+# KERNEL: addr zzzz instr JMP mode DECODE resource IR1
+# KERNEL: addr zzzz instr MULT mode EXECUTE resource IR2
+# KERNEL: addr zzzz instr WRITE mode DECODE resource REGA
+# KERNEL: addr zzzz instr MULT mode EXECUTE resource REGB
+# KERNEL: addr zzzz instr ADD mode DECODE resource REG_FILE
+# KERNEL: addr zzzz instr NOP mode EXECUTE resource STK
+# KERNEL: addr zzzz instr READ mode FETCH resource REGA
+# KERNEL: addr zzzz instr MULT mode DECODE resource PC
+# KERNEL: addr zzzz instr WRITE mode EXECUTE resource REGB
+# KERNEL: addr zzzz instr SUB mode FETCH resource REGB
+# KERNEL: addr zzzz instr ADD mode EXECUTE resource REGB
+# KERNEL: addr zzzz instr IDLE mode DECODE resource STK
+# KERNEL: addr zzzz instr IDLE mode EXECUTE resource IR1
+# KERNEL: addr zzzz instr WRITE mode EXECUTE resource IR2
+# KERNEL: addr zzzz instr SUB mode FETCH resource PC
+# KERNEL: addr zzzz instr NOP mode DECODE resource PC
+# KERNEL: addr zzzz instr MOV mode EXECUTE resource MAR
+# KERNEL: addr zzzz instr JMP mode FETCH resource REG_FILE
+# KERNEL: addr zzzz instr SUB mode EXECUTE resource REGB
+# KERNEL: addr zzzz instr WRITE mode DECODE resource REG_FILE
+# KERNEL: addr zzzz instr WRITE mode DECODE resource MAR
+# KERNEL: addr zzzz instr WRITE mode EXECUTE resource PC
+# KERNEL: addr zzzz instr NOP mode FETCH resource REGA
+# KERNEL: addr zzzz instr MOV mode DECODE resource REGB
+# KERNEL: addr zzzz instr MULT mode DECODE resource IR1
+# KERNEL: addr zzzz instr NOP mode FETCH resource STK
+# KERNEL: addr zzzz instr ADD mode EXECUTE resource STK
+# KERNEL: addr zzzz instr NOP mode DECODE resource REGB
+# KERNEL: addr zzzz instr MULT mode FETCH resource REGA
+# KERNEL: addr zzzz instr JMP mode EXECUTE resource REGA
+# KERNEL: addr zzzz instr READ mode DECODE resource MAR
+# KERNEL: addr zzzz instr MOV mode FETCH resource REGB
+# KERNEL: addr zzzz instr ADD mode EXECUTE resource IR1
+# KERNEL: addr zzzz instr MOV mode EXECUTE resource IR2
+# KERNEL: addr zzzz instr READ mode EXECUTE resource IR2
+# KERNEL: addr zzzz instr JMP mode DECODE resource IR2
+# KERNEL: addr zzzz instr NOP mode DECODE resource MAR
+# KERNEL: addr zzzz instr MOV mode FETCH resource STK
+# KERNEL: addr zzzz instr IDLE mode DECODE resource REGB
+# KERNEL: addr zzzz instr ADD mode EXECUTE resource IR2
+# KERNEL: addr zzzz instr ADD mode DECODE resource REGB
+# KERNEL: addr zzzz instr NOP mode EXECUTE resource STK
+# KERNEL: addr zzzz instr READ mode DECODE resource REGA
+# KERNEL: addr zzzz instr MULT mode DECODE resource MAR
+# KERNEL: addr zzzz instr SUB mode FETCH resource MAR
+# KERNEL: addr zzzz instr ADD mode DECODE resource MAR
+# KERNEL: addr zzzz instr MULT mode FETCH resource PC
+# KERNEL: addr zzzz instr JMP mode FETCH resource REGA
+# KERNEL: addr zzzz instr IDLE mode EXECUTE resource REGA
+# KERNEL: addr zzzz instr MOV mode DECODE resource PC
+# KERNEL: addr zzzz instr JMP mode EXECUTE resource MAR
+# KERNEL: addr zzzz instr NOP mode DECODE resource REGA
+# KERNEL: addr zzzz instr SUB mode EXECUTE resource MAR
+# KERNEL: addr zzzz instr READ mode DECODE resource REGB
+# KERNEL: addr zzzz instr NOP mode FETCH resource REG_FILE
+# KERNEL: addr zzzz instr SUB mode EXECUTE resource IR2
+# KERNEL: addr zzzz instr IDLE mode FETCH resource MAR
+# KERNEL: addr zzzz instr READ mode FETCH resource STK
+# KERNEL: addr zzzz instr SUB mode EXECUTE resource STK
+# KERNEL: addr zzzz instr READ mode EXECUTE resource REGA
+# KERNEL: addr zzzz instr READ mode DECODE resource STK
+# KERNEL: addr zzzz instr NOP mode EXECUTE resource MAR
+# KERNEL: addr zzzz instr NOP mode DECODE resource STK
+# KERNEL: addr zzzz instr ADD mode EXECUTE resource REG_FILE
+# KERNEL: addr zzzz instr MULT mode FETCH resource IR2
+# KERNEL: addr zzzz instr JMP mode DECODE resource MAR
+# KERNEL: addr zzzz instr ADD mode FETCH resource REGB
+# KERNEL: addr zzzz instr JMP mode DECODE resource REGB
+# KERNEL: addr zzzz instr WRITE mode EXECUTE resource REGB
+# KERNEL: addr zzzz instr SUB mode EXECUTE resource REGB
+# KERNEL: addr zzzz instr JMP mode FETCH resource STK
+# KERNEL: addr zzzz instr SUB mode FETCH resource IR1
+# KERNEL: addr zzzz instr READ mode FETCH resource IR2
+# KERNEL: addr zzzz instr IDLE mode EXECUTE resource IR2
+# RUNTIME: Info: RUNTIME_0068 cpu_cg_module2.sv (38): $finish called.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /test1/dut,  Process: @INITIAL#stimulus@.
+# KERNEL: stopped at time: 0 ps
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+quit
+# KERNEL: Final cov achieved is 0 
+# KERNEL: Final cov achieved is 0 
+# FCOVER: Covergroup Coverage data has been saved to "fcover.acdb" database.
+# VSIM: Simulation has finished.

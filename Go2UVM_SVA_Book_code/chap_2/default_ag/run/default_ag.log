@@ -1,0 +1,208 @@
+asim +access +rw  $UVMSIM +UVM_VERBOSITY=UVM_FULL
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top1' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'sva_if' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'default_ag' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'vw_go2uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'std' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 1.4 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 100ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/home/student/tools/eda/RVRA_2015.02/bin/libsystf.so'
+# KERNEL: Info: Loading library:  /home/student/tools/eda/RVRA_2015.02/bin/uvm_1_1d_dpi
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.4 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 1.0 [s]
+# SLP: 0 primitives and 2 (40.00%) other processes in SLP
+# SLP: 5 (0.02%) signals in SLP and 24 (0.09%) interface signals
+# ELAB2: Elaboration final pass complete - time: 5.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: SLP simulation initialization done - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 44693 kB (elbread=21735 elab2=20623 kernel=2333 sdf=0)
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.1  d
+# KERNEL: (C) 2007-2013 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2013 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2013 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: Assertion failures tracking enabled, report enabled, unlimited, action Continue. Assertion passes tracking enabled, report disabled, unlimited.
+# KERNEL: ASDB file was created in location /home/student/Rajeswari/chap_2_corrected/ch2/default_ag/run/dataset.asdb
+wave -rec sim:/* 
+run -all;
+# KERNEL: UVM_INFO @ 0: Go2UVM [Go2UVM ] RELNOTES
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: (C) 2004-2014 VerifWorks a venture of CVC Pvt Ltd. 
+# KERNEL:  VW_Go2UVM Version 1.1d.5 (VerifWorks a venture of CVC Pvt Ltd http://www.verifworks.com )
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the Go2UVM Package from VerifWorks a venture of CVC Pvt Ltd www.verifworks.com
+# KERNEL:   See http://www.go2uvm.org for more details 
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test ...
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2/default_ag/uvm/default_ag.sv(36) @ 0.000 ns: Go2UVM [Go2UVM] Start of reset
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 7ns (4 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 1ns (1 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 9ns (5 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 3ns (2 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 10ns (1 clk), ../dut/default_ag.sv(9), scope: top.dut, start-time: 10ns (1 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 11ns (6 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 5ns (3 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 13ns (7 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 7ns (4 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 15ns (8 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 9ns (5 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 17ns (9 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 11ns (6 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 19ns (10 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 13ns (7 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 21ns (11 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 15ns (8 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 23ns (12 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 17ns (9 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 25ns (13 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 19ns (10 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 27ns (14 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 21ns (11 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 29ns (15 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 23ns (12 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 30ns (2 clk), ../dut/default_ag.sv(9), scope: top.dut, start-time: 30ns (2 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 31ns (16 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 25ns (13 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 33ns (17 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 27ns (14 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 35ns (18 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 29ns (15 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 37ns (19 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 31ns (16 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 39ns (20 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 33ns (17 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 41ns (21 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 35ns (18 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 43ns (22 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 37ns (19 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 45ns (23 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 39ns (20 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 47ns (24 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 41ns (21 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 49ns (25 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 43ns (22 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 50ns (3 clk), ../dut/default_ag.sv(9), scope: top.dut, start-time: 50ns (3 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 51ns (26 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 45ns (23 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 53ns (27 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 47ns (24 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 55ns (28 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 49ns (25 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 57ns (29 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 51ns (26 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 59ns (30 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 53ns (27 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 61ns (31 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 55ns (28 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 63ns (32 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 57ns (29 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 65ns (33 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 59ns (30 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 67ns (34 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 61ns (31 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 69ns (35 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 63ns (32 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 70ns (4 clk), ../dut/default_ag.sv(9), scope: top.dut, start-time: 70ns (4 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 71ns (36 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 65ns (33 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 73ns (37 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 67ns (34 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 75ns (38 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 69ns (35 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 77ns (39 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 71ns (36 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 79ns (40 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 73ns (37 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 81ns (41 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 75ns (38 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 83ns (42 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 77ns (39 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 85ns (43 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 79ns (40 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 87ns (44 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 81ns (41 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 89ns (45 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 83ns (42 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 90ns (5 clk), ../dut/default_ag.sv(9), scope: top.dut, start-time: 90ns (5 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 91ns (46 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 85ns (43 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 93ns (47 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 87ns (44 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 95ns (48 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 89ns (45 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 97ns (49 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 91ns (46 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 99ns (50 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 93ns (47 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 101ns (51 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 95ns (48 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 103ns (52 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 97ns (49 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 105ns (53 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 99ns (50 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 107ns (54 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 101ns (51 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 109ns (55 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 103ns (52 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 110ns (6 clk), ../dut/default_ag.sv(9), scope: top.dut, start-time: 110ns (6 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 111ns (56 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 105ns (53 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 113ns (57 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 107ns (54 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 115ns (58 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 109ns (55 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 117ns (59 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 111ns (56 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 119ns (60 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 113ns (57 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 121ns (61 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 115ns (58 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 123ns (62 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 117ns (59 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 125ns (63 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 119ns (60 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 127ns (64 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 121ns (61 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 129ns (65 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 123ns (62 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 130ns (7 clk), ../dut/default_ag.sv(9), scope: top.dut, start-time: 130ns (7 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 131ns (66 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 125ns (63 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 133ns (67 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 127ns (64 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 135ns (68 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 129ns (65 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 137ns (69 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 131ns (66 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 139ns (70 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 133ns (67 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 141ns (71 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 135ns (68 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 143ns (72 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 137ns (69 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 145ns (73 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 139ns (70 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 147ns (74 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 141ns (71 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 149ns (75 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 143ns (72 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 150ns (8 clk), ../dut/default_ag.sv(9), scope: top.dut, start-time: 150ns (8 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 151ns (76 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 145ns (73 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 153ns (77 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 147ns (74 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 155ns (78 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 149ns (75 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 157ns (79 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 151ns (76 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 159ns (80 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 153ns (77 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 161ns (81 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 155ns (78 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 163ns (82 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 157ns (79 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 165ns (83 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 159ns (80 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 167ns (84 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 161ns (81 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 169ns (85 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 163ns (82 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 170ns (9 clk), ../dut/default_ag.sv(9), scope: top.dut, start-time: 170ns (9 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 171ns (86 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 165ns (83 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 173ns (87 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 167ns (84 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 175ns (88 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 169ns (85 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 177ns (89 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 171ns (86 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 179ns (90 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 173ns (87 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 181ns (91 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 175ns (88 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 183ns (92 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 177ns (89 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 185ns (93 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 179ns (90 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 187ns (94 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 181ns (91 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 189ns (95 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 183ns (92 clk)
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2/default_ag/uvm/default_ag.sv(38) @ 190.000 ns: Go2UVM [Go2UVM] End of reset
+# KERNEL: UVM_INFO @ 190.000 ns: Go2UVM [Go2UVM] Driving stimulus via UVM
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2/default_ag/uvm/default_ag.sv(43) @ 190.000 ns: Go2UVM [Go2UVM] Start of Test
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 190ns (10 clk), ../dut/default_ag.sv(9), scope: top.dut, start-time: 190ns (10 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 191ns (96 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 185ns (93 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 193ns (97 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 187ns (94 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 195ns (98 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 189ns (95 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 197ns (99 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 191ns (96 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 199ns (100 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 193ns (97 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 201ns (101 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 195ns (98 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 203ns (102 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 197ns (99 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 205ns (103 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 199ns (100 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 207ns (104 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 201ns (101 clk)
+# KERNEL: Error: Assertion 'ap_q_with_default' FAILED at time: 209ns (105 clk), ../dut/default_ag.sv(9), scope: top1.dut, start-time: 203ns (102 clk)
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2/default_ag/uvm/default_ag.sv(47) @ 210.000 ns: Go2UVM [Go2UVM] End of Test
+# KERNEL: UVM_INFO @ 210.000 ns: Go2UVM [Go2UVM] End of stimulus
+# KERNEL: UVM_INFO @ 210.000 ns: Go2UVM [Go2UVM] Thanks for using VW's Go2UVM Package, provide your feedback at http://www.go2uvm.org
+# KERNEL: 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :    9
+# KERNEL: UVM_WARNING :    0
+# KERNEL: UVM_ERROR :    0
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [Go2UVM]     7
+# KERNEL: [Go2UVM ]     1
+# KERNEL: [RNTST]     1
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (433): $finish called.
+# KERNEL: Time: 210 ns,  Iteration: 67,  Instance: /top,  Process: @INITIAL#72_1@.
+# KERNEL: stopped at time: 210 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+quit
+# KERNEL: Warning: Assertion 'ap_q_with_default' NOT FINISHED, ../dut/default_ag.sv(9), scope: top1.dut, start-time: 205ns (103 clk)
+# KERNEL: Warning: Assertion 'ap_q_with_default' NOT FINISHED, ../dut/default_ag.sv(9), scope: top1.dut, start-time: 207ns (104 clk)
+# KERNEL: Warning: Assertion 'ap_q_with_default' NOT FINISHED, ../dut/default_ag.sv(9), scope: top1.dut, start-time: 209ns (105 clk)
+# VSIM: Simulation has finished.

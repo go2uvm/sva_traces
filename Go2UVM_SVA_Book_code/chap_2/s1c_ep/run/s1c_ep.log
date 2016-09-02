@@ -1,0 +1,124 @@
+asim +access +rw  $UVMSIM +UVM_VERBOSITY=UVM_FULL
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'sva_if' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'vw_go2uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'std' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 1.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 100ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/home/student/tools/eda/RVRA_2015.02/bin/libsystf.so'
+# KERNEL: Info: Loading library:  /home/student/tools/eda/RVRA_2015.02/bin/uvm_1_1d_dpi
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.5 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 1.1 [s]
+# SLP: 0 primitives and 1 (16.67%) other processes in SLP
+# SLP: 4 (0.02%) signals in SLP and 15 (0.06%) interface signals
+# ELAB2: Elaboration final pass complete - time: 5.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 45750 kB (elbread=21735 elab2=21677 kernel=2336 sdf=0)
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.1  d
+# KERNEL: (C) 2007-2013 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2013 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2013 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: Assertion failures tracking enabled, report enabled, unlimited, action Continue. Assertion passes tracking enabled, report disabled, unlimited.
+# KERNEL: ASDB file was created in location /home/student/Rajeswari/chap_2_corrected/ch2/s1c_ep/run/dataset.asdb
+wave -rec sim:/* 
+run -all;
+# KERNEL: UVM_INFO @ 0: Go2UVM [Go2UVM ] RELNOTES
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: (C) 2004-2014 VerifWorks a venture of CVC Pvt Ltd. 
+# KERNEL:  VW_Go2UVM Version 1.1d.5 (VerifWorks a venture of CVC Pvt Ltd http://www.verifworks.com )
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the Go2UVM Package from VerifWorks a venture of CVC Pvt Ltd www.verifworks.com
+# KERNEL:   See http://www.go2uvm.org for more details 
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test ...
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2/s1c_ep/uvm/UVM_ch3seqdelay.sv(37) @ 0.000 ns: Go2UVM [Go2UVM] Start of reset
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 30ns (2 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 10ns (1 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 50ns (3 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 30ns (2 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 70ns (4 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 50ns (3 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 90ns (5 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 70ns (4 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 110ns (6 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 90ns (5 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 130ns (7 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 110ns (6 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 150ns (8 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 130ns (7 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 170ns (9 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 150ns (8 clk)
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2/s1c_ep/uvm/UVM_ch3seqdelay.sv(39) @ 190.000 ns: Go2UVM [Go2UVM] End of reset
+# KERNEL: UVM_INFO @ 190.000 ns: Go2UVM [Go2UVM] Driving stimulus via UVM
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2/s1c_ep/uvm/UVM_ch3seqdelay.sv(44) @ 190.000 ns: Go2UVM [Go2UVM] Start of Test
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 190ns (10 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 170ns (9 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 210ns (11 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 190ns (10 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 230ns (12 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 210ns (11 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 250ns (13 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 230ns (12 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 270ns (14 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 250ns (13 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 290ns (15 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 270ns (14 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 310ns (16 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 290ns (15 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 370ns (19 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 350ns (18 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 390ns (20 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 370ns (19 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 410ns (21 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 390ns (20 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 430ns (22 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 410ns (21 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 450ns (23 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 430ns (22 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 470ns (24 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 450ns (23 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 490ns (25 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 470ns (24 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 510ns (26 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 490ns (25 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 530ns (27 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 510ns (26 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 550ns (28 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 530ns (27 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 570ns (29 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 550ns (28 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 590ns (30 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 570ns (29 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 610ns (31 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 590ns (30 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 630ns (32 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 610ns (31 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 650ns (33 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 630ns (32 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 670ns (34 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 650ns (33 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 690ns (35 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 670ns (34 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 710ns (36 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 690ns (35 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 730ns (37 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 710ns (36 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 750ns (38 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 730ns (37 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 770ns (39 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 750ns (38 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 790ns (40 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 770ns (39 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 850ns (43 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 830ns (42 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 870ns (44 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 850ns (43 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 890ns (45 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 870ns (44 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 910ns (46 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 890ns (45 clk)
+# KERNEL: Error: Assertion 'ap_FMqab123_triggered' FAILED at time: 930ns (47 clk), ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 910ns (46 clk)
+# KERNEL: end of simulation
+# KERNEL: end of simulation
+# KERNEL: end of simulation
+# KERNEL: end of simulation
+# KERNEL: end of simulation
+# KERNEL: end of simulation
+# RUNTIME: Info: RUNTIME_0070 UVM_ch3seqdelay.sv (81): $stop called.
+# KERNEL: Time: 950 ns,  Iteration: 1,  Instance: /\package uvm.uvm_pkg\/uvm_task_phase,  Process: @INTERNAL#137_0@.
+# KERNEL: Stopped at time 950 ns + 1.
+quit
+# KERNEL: Warning: Assertion 'ap_FMqab123_triggered' NOT FINISHED, ../dut/s1c_ep1.sv(37), scope: top.dut, start-time: 930ns (47 clk)
+# VSIM: Simulation has finished.

@@ -1,0 +1,101 @@
+asim +access +rw  $UVMSIM +UVM_VERBOSITY=UVM_FULL
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top1' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'sva_if' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'or_vacuity' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'vw_go2uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'std' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 1.4 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 100ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/home/student/tools/eda/RVRA_2015.02/bin/libsystf.so'
+# KERNEL: Info: Loading library:  /home/student/tools/eda/RVRA_2015.02/bin/uvm_1_1d_dpi
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.3 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.8 [s]
+# SLP: 0 primitives and 3 (21.43%) other processes in SLP
+# SLP: 10 (0.04%) signals in SLP and 40 (0.15%) interface signals
+# ELAB2: Elaboration final pass complete - time: 4.7 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 45748 kB (elbread=21735 elab2=21676 kernel=2335 sdf=0)
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.1  d
+# KERNEL: (C) 2007-2013 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2013 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2013 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: Assertion failures tracking enabled, report enabled, unlimited, action Continue. Assertion passes tracking enabled, report disabled, unlimited.
+# KERNEL: ASDB file was created in location /home/student/Rajeswari/chap_2_corrected/ch2_others/or_vacuity/run/dataset.asdb
+wave -rec sim:/* 
+run -all;
+# KERNEL: UVM_INFO @ 0: Go2UVM [Go2UVM ] RELNOTES
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: (C) 2004-2014 VerifWorks a venture of CVC Pvt Ltd. 
+# KERNEL:  VW_Go2UVM Version 1.1d.5 (VerifWorks a venture of CVC Pvt Ltd http://www.verifworks.com )
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the Go2UVM Package from VerifWorks a venture of CVC Pvt Ltd www.verifworks.com
+# KERNEL:   See http://www.go2uvm.org for more details 
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test ...
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2_others/or_vacuity/uvm/or_vacuity.sv(37) @ 0.000 ns: Go2UVM [Go2UVM] Start of reset
+# KERNEL: end of sim
+# KERNEL: Error: Assertion 'ap_or2' FAILED at time: 15ns (8 clk), ../dut/or_vacuity.sv(8), scope: top1.dut, start-time: 3ns (2 clk)
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2_others/or_vacuity/uvm/or_vacuity.sv(39) @ 190.000 ns: Go2UVM [Go2UVM] End of reset
+# KERNEL: UVM_INFO @ 190.000 ns: Go2UVM [Go2UVM] Driving stimulus via UVM
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2_others/or_vacuity/uvm/or_vacuity.sv(43) @ 190.000 ns: Go2UVM [Go2UVM] Start of Test
+# KERNEL: end of sim
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2_others/or_vacuity/uvm/or_vacuity.sv(60) @ 370.000 ns: Go2UVM [Go2UVM] End of Test
+# KERNEL: UVM_INFO @ 370.000 ns: Go2UVM [Go2UVM] End of stimulus
+# KERNEL: UVM_INFO @ 370.000 ns: Go2UVM [Go2UVM] Thanks for using VW's Go2UVM Package, provide your feedback at http://www.go2uvm.org
+# KERNEL: 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :    9
+# KERNEL: UVM_WARNING :    0
+# KERNEL: UVM_ERROR :    0
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [Go2UVM]     7
+# KERNEL: [Go2UVM ]     1
+# KERNEL: [RNTST]     1
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (433): $finish called.
+# KERNEL: Time: 370 ns,  Iteration: 67,  Instance: /top,  Process: @INITIAL#87_1@.
+# KERNEL: stopped at time: 370 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+quit
+# KERNEL: Warning: Assertion 'ap_or0' NOT FINISHED, ../dut/or_vacuity.sv(6), scope: top.dut, start-time: 270ns (14 clk)
+# KERNEL: Warning: Assertion 'ap_or' NOT FINISHED, ../dut/or_vacuity.sv(7), scope: top.dut, start-time: 250ns (13 clk)
+# KERNEL: Warning: Assertion 'ap_or' NOT FINISHED, ../dut/or_vacuity.sv(7), scope: top.dut, start-time: 270ns (14 clk)
+# KERNEL: Warning: Assertion 'ap_or2' NOT FINISHED, ../dut/or_vacuity.sv(8), scope: top.dut, start-time: 250ns (13 clk)
+# KERNEL: Warning: Assertion 'ap_or2' NOT FINISHED, ../dut/or_vacuity.sv(8), scope: top.dut, start-time: 270ns (14 clk)
+# VSIM: Simulation has finished.

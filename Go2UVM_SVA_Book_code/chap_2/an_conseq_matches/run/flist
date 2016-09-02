@@ -1,0 +1,7 @@
++incdir+$VW_GO2UVM_HOME/
+$VW_GO2UVM_HOME/src/vw_go2uvm_pkg.sv
+
+
+
+../dut/an_conseq_matches.sv
+../go2uvm/an_conseq_matches_go2uvm.sv

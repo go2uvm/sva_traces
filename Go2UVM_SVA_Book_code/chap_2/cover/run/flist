@@ -1,0 +1,7 @@
++incdir+$VW_GO2UVM_HOME/
+$VW_GO2UVM_HOME/src/vw_go2uvm_pkg.sv
+
+
+
+../dut/cover_va.sv
+../go2uvm/cover_va_go2uvm.sv

@@ -1,0 +1,894 @@
+asim +access +rw  $UVMSIM +UVM_VERBOSITY=UVM_FULL
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top1' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'sva_if' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'm_unique' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'cvc_go2uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'std' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.6 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 100ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/home/student/tools/eda/RVRA_2015.02/bin/libsystf.so'
+# KERNEL: Info: Loading library:  /home/student/tools/eda/RVRA_2015.02/bin/uvm_1_1d_dpi
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: m_unique.sv (65): Length of connection (1) does not match the length of port "a" (3) on instance "/top/dut".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 0 primitives and 4 (80.00%) other processes in SLP
+# SLP: 7 (0.03%) signals in SLP and 8 (0.03%) interface signals
+# ELAB2: Elaboration final pass complete - time: 2.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 44693 kB (elbread=21735 elab2=20624 kernel=2333 sdf=0)
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.1  d
+# KERNEL: (C) 2007-2013 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2013 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2013 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: ASDB file was created in location /home/student/arlin/Chap_4_corrected/Done/m_unique/run/dataset.asdb
+wave -rec sim:/* 
+run -all;
+# KERNEL: UVM_INFO @ 0: Go2UVM [Go2UVM ] RELNOTES
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: (C) 2004-2014 CVC Pvt Ltd. 
+# KERNEL:  CVC_Go2UVM Version 1.1d.5 (CVC http://www.cvcblr.com )
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the Go2UVM Package from CVC www.cvcblr.com
+# KERNEL:   See http://www.go2uvm.org for more details 
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test ...
+# KERNEL: UVM_INFO /home/student/arlin/Chap_4_corrected/Done/m_unique/uvm/m_unique.sv(37) @ 0.000 ns: Go2UVM [Go2UVM] Start of reset
+# KERNEL: unique 0,1,2,4   1.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3   1.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1   1.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 1.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4   3.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3   3.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1   3.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 3.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4   5.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3   5.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1   5.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 5.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4   7.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3   7.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1   7.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 7.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4   9.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3   9.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1   9.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 9.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  10.000 ns a=X
+# KERNEL: Warning: unique_if_1: ../dut/m_unique.sv(6), scope: top.dut, time: 10.000 ns. None of 'if' branches matched.
+# KERNEL: priority 0,1,2,3  10.000 ns a=X
+# KERNEL: Warning: priority_if_1: ../dut/m_unique.sv(11), scope: top.dut, time: 10.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1  10.000 ns a=X
+# KERNEL: Warning: unique_if_2: ../dut/m_unique.sv(23), scope: top.dut, time: 10.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1,2,4  11.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  11.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  11.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 11.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  13.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  13.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  13.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 13.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  15.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  15.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  15.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 15.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  17.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  17.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  17.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 17.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  19.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  19.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  19.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 19.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  21.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  21.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  21.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 21.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  23.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  23.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  23.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 23.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  25.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  25.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  25.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 25.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  27.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  27.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  27.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 27.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  29.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  29.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  29.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 29.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  30.000 ns a=X
+# KERNEL: Warning: unique_if_1: ../dut/m_unique.sv(6), scope: top.dut, time: 30.000 ns. None of 'if' branches matched.
+# KERNEL: priority 0,1,2,3  30.000 ns a=X
+# KERNEL: Warning: priority_if_1: ../dut/m_unique.sv(11), scope: top.dut, time: 30.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1  30.000 ns a=X
+# KERNEL: Warning: unique_if_2: ../dut/m_unique.sv(23), scope: top.dut, time: 30.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1,2,4  31.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  31.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  31.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 31.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  33.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  33.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  33.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 33.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  35.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  35.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  35.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 35.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  37.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  37.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  37.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 37.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  39.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  39.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  39.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 39.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  41.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  41.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  41.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 41.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  43.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  43.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  43.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 43.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  45.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  45.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  45.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 45.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  47.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  47.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  47.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 47.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  49.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  49.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  49.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 49.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  50.000 ns a=X
+# KERNEL: Warning: unique_if_1: ../dut/m_unique.sv(6), scope: top.dut, time: 50.000 ns. None of 'if' branches matched.
+# KERNEL: priority 0,1,2,3  50.000 ns a=X
+# KERNEL: Warning: priority_if_1: ../dut/m_unique.sv(11), scope: top.dut, time: 50.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1  50.000 ns a=X
+# KERNEL: Warning: unique_if_2: ../dut/m_unique.sv(23), scope: top.dut, time: 50.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1,2,4  51.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  51.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  51.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 51.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  53.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  53.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  53.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 53.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  55.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  55.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  55.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 55.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  57.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  57.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  57.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 57.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  59.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  59.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  59.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 59.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  61.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  61.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  61.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 61.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  63.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  63.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  63.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 63.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  65.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  65.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  65.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 65.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  67.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  67.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  67.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 67.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  69.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  69.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  69.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 69.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  70.000 ns a=X
+# KERNEL: Warning: unique_if_1: ../dut/m_unique.sv(6), scope: top.dut, time: 70.000 ns. None of 'if' branches matched.
+# KERNEL: priority 0,1,2,3  70.000 ns a=X
+# KERNEL: Warning: priority_if_1: ../dut/m_unique.sv(11), scope: top.dut, time: 70.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1  70.000 ns a=X
+# KERNEL: Warning: unique_if_2: ../dut/m_unique.sv(23), scope: top.dut, time: 70.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1,2,4  71.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  71.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  71.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 71.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  73.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  73.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  73.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 73.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  75.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  75.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  75.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 75.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  77.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  77.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  77.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 77.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  79.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  79.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  79.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 79.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  81.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  81.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  81.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 81.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  83.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  83.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  83.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 83.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  85.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  85.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  85.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 85.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  87.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  87.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  87.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 87.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  89.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  89.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  89.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 89.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  90.000 ns a=X
+# KERNEL: Warning: unique_if_1: ../dut/m_unique.sv(6), scope: top.dut, time: 90.000 ns. None of 'if' branches matched.
+# KERNEL: priority 0,1,2,3  90.000 ns a=X
+# KERNEL: Warning: priority_if_1: ../dut/m_unique.sv(11), scope: top.dut, time: 90.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1  90.000 ns a=X
+# KERNEL: Warning: unique_if_2: ../dut/m_unique.sv(23), scope: top.dut, time: 90.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1,2,4  91.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  91.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  91.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 91.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  93.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  93.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  93.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 93.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  95.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  95.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  95.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 95.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  97.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  97.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  97.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 97.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4  99.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3  99.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1  99.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 99.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 101.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 101.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 101.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 101.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 103.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 103.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 103.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 103.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 105.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 105.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 105.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 105.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 107.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 107.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 107.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 107.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 109.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 109.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 109.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 109.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 110.000 ns a=X
+# KERNEL: Warning: unique_if_1: ../dut/m_unique.sv(6), scope: top.dut, time: 110.000 ns. None of 'if' branches matched.
+# KERNEL: priority 0,1,2,3 110.000 ns a=X
+# KERNEL: Warning: priority_if_1: ../dut/m_unique.sv(11), scope: top.dut, time: 110.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1 110.000 ns a=X
+# KERNEL: Warning: unique_if_2: ../dut/m_unique.sv(23), scope: top.dut, time: 110.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1,2,4 111.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 111.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 111.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 111.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 113.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 113.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 113.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 113.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 115.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 115.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 115.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 115.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 117.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 117.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 117.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 117.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 119.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 119.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 119.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 119.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 121.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 121.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 121.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 121.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 123.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 123.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 123.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 123.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 125.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 125.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 125.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 125.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 127.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 127.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 127.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 127.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 129.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 129.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 129.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 129.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 130.000 ns a=X
+# KERNEL: Warning: unique_if_1: ../dut/m_unique.sv(6), scope: top.dut, time: 130.000 ns. None of 'if' branches matched.
+# KERNEL: priority 0,1,2,3 130.000 ns a=X
+# KERNEL: Warning: priority_if_1: ../dut/m_unique.sv(11), scope: top.dut, time: 130.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1 130.000 ns a=X
+# KERNEL: Warning: unique_if_2: ../dut/m_unique.sv(23), scope: top.dut, time: 130.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1,2,4 131.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 131.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 131.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 131.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 133.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 133.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 133.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 133.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 135.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 135.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 135.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 135.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 137.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 137.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 137.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 137.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 139.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 139.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 139.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 139.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 141.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 141.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 141.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 141.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 143.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 143.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 143.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 143.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 145.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 145.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 145.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 145.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 147.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 147.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 147.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 147.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 149.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 149.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 149.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 149.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 150.000 ns a=X
+# KERNEL: Warning: unique_if_1: ../dut/m_unique.sv(6), scope: top.dut, time: 150.000 ns. None of 'if' branches matched.
+# KERNEL: priority 0,1,2,3 150.000 ns a=X
+# KERNEL: Warning: priority_if_1: ../dut/m_unique.sv(11), scope: top.dut, time: 150.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1 150.000 ns a=X
+# KERNEL: Warning: unique_if_2: ../dut/m_unique.sv(23), scope: top.dut, time: 150.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1,2,4 151.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 151.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 151.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 151.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 153.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 153.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 153.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 153.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 155.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 155.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 155.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 155.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 157.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 157.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 157.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 157.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 159.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 159.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 159.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 159.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 161.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 161.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 161.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 161.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 163.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 163.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 163.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 163.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 165.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 165.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 165.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 165.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 167.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 167.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 167.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 167.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 169.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 169.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 169.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 169.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 170.000 ns a=X
+# KERNEL: Warning: unique_if_1: ../dut/m_unique.sv(6), scope: top.dut, time: 170.000 ns. None of 'if' branches matched.
+# KERNEL: priority 0,1,2,3 170.000 ns a=X
+# KERNEL: Warning: priority_if_1: ../dut/m_unique.sv(11), scope: top.dut, time: 170.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1 170.000 ns a=X
+# KERNEL: Warning: unique_if_2: ../dut/m_unique.sv(23), scope: top.dut, time: 170.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1,2,4 171.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 171.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 171.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 171.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 173.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 173.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 173.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 173.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 175.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 175.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 175.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 175.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 177.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 177.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 177.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 177.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 179.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 179.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 179.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 179.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 181.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 181.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 181.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 181.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 183.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 183.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 183.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 183.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 185.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 185.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 185.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 185.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 187.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 187.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 187.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 187.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 189.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 189.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 189.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 189.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 190.000 ns a=X
+# KERNEL: Warning: unique_if_1: ../dut/m_unique.sv(6), scope: top.dut, time: 190.000 ns. None of 'if' branches matched.
+# KERNEL: priority 0,1,2,3 190.000 ns a=X
+# KERNEL: Warning: priority_if_1: ../dut/m_unique.sv(11), scope: top.dut, time: 190.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1 190.000 ns a=X
+# KERNEL: Warning: unique_if_2: ../dut/m_unique.sv(23), scope: top.dut, time: 190.000 ns. None of 'if' branches matched.
+# KERNEL: UVM_INFO /home/student/arlin/Chap_4_corrected/Done/m_unique/uvm/m_unique.sv(39) @ 190.000 ns: Go2UVM [Go2UVM] End of reset
+# KERNEL: UVM_INFO @ 190.000 ns: Go2UVM [Go2UVM] Driving stimulus via UVM
+# KERNEL: UVM_INFO /home/student/arlin/Chap_4_corrected/Done/m_unique/uvm/m_unique.sv(44) @ 190.000 ns: Go2UVM [Go2UVM] Start of Test
+# KERNEL: unique 0,1,2,4 191.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 191.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 191.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 191.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 193.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 193.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 193.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 193.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 195.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 195.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 195.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 195.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 197.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 197.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 197.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 197.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 199.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 199.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 199.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 199.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 201.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 201.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 201.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 201.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 203.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 203.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 203.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 203.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 205.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 205.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 205.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 205.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 207.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 207.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 207.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 207.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 209.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: priority 0,1,2,3 209.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: unique 0,1 209.000 ns a=0
+# KERNEL: 0 or 1
+# KERNEL: Error: Assertion 'unique_if_2' FAILED at time: 209.000 ns, ../dut/m_unique.sv(23), scope: top1.dut. Two or more conditions are true simultaneously: a==0||a==1 (line: 23), a==0. (line: 25)
+# KERNEL: unique 0,1,2,4 210.000 ns a=X
+# KERNEL: Warning: unique_if_1: ../dut/m_unique.sv(6), scope: top.dut, time: 210.000 ns. None of 'if' branches matched.
+# KERNEL: priority 0,1,2,3 210.000 ns a=X
+# KERNEL: Warning: priority_if_1: ../dut/m_unique.sv(11), scope: top.dut, time: 210.000 ns. None of 'if' branches matched.
+# KERNEL: unique 0,1 210.000 ns a=X
+# KERNEL: Warning: unique_if_2: ../dut/m_unique.sv(23), scope: top.dut, time: 210.000 ns. None of 'if' branches matched.
+# KERNEL: UVM_INFO /home/student/arlin/Chap_4_corrected/Done/m_unique/uvm/m_unique.sv(50) @ 210.000 ns: Go2UVM [Go2UVM] End of Test
+# KERNEL: UVM_INFO @ 210.000 ns: Go2UVM [Go2UVM] End of stimulus
+# KERNEL: UVM_INFO @ 210.000 ns: Go2UVM [Go2UVM] Thanks for using CVC's Go2UVM Package, provide your feedback at http://www.go2uvm.org
+# KERNEL: 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :    9
+# KERNEL: UVM_WARNING :    0
+# KERNEL: UVM_ERROR :    0
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [Go2UVM]     7
+# KERNEL: [Go2UVM ]     1
+# KERNEL: [RNTST]     1
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (433): $finish called.
+# KERNEL: Time: 210 ns,  Iteration: 67,  Instance: /top,  Process: @INITIAL#74_1@.
+# KERNEL: stopped at time: 210 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+quit
+# VSIM: Simulation has finished.

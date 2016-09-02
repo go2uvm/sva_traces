@@ -1,0 +1,362 @@
+asim +access +rw  $UVMSIM +UVM_VERBOSITY=UVM_FULL
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'seq_event1' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'seq_event' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'sva_if' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'vw_go2uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'std' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 1.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 100ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/home/student/tools/eda/RVRA_2015.02/bin/libsystf.so'
+# KERNEL: Info: Loading library:  /home/student/tools/eda/RVRA_2015.02/bin/uvm_1_1d_dpi
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.5 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 1.2 [s]
+# SLP: 0 primitives and 4 (21.05%) other processes in SLP
+# SLP: 4 (0.02%) signals in SLP and 30 (0.11%) interface signals
+# ELAB2: Elaboration final pass complete - time: 5.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 45757 kB (elbread=21735 elab2=21685 kernel=2336 sdf=0)
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.1  d
+# KERNEL: (C) 2007-2013 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2013 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2013 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: Assertion failures tracking enabled, report enabled, unlimited, action Continue. Assertion passes tracking enabled, report disabled, unlimited.
+# KERNEL: ASDB file was created in location /home/student/Rajeswari/chap_2_corrected/ch2/seq_event/run/dataset.asdb
+wave -rec sim:/* 
+run -all;
+# KERNEL: UVM_INFO @ 0: Go2UVM [Go2UVM ] RELNOTES
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: (C) 2004-2014 VerifWorks a venture of CVC Pvt Ltd. 
+# KERNEL:  VW_Go2UVM Version 1.1d.5 (VerifWorks a venture of CVC Pvt Ltd http://www.verifworks.com )
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the Go2UVM Package from VerifWorks a venture of CVC Pvt Ltd www.verifworks.com
+# KERNEL:   See http://www.go2uvm.org for more details 
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test ...
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2/seq_event/uvm/UVM_ch3seqdelay.sv(36) @ 0.000 ns: Go2UVM [Go2UVM] Start of reset
+# KERNEL: Error: Assertion 'ap_qe_match0' FAILED at time: 3ns (2 clk), ../dut/seq_event.sv(11), scope: seq_event1.dut, start-time: 3ns (2 clk)
+# KERNEL: Error: Assertion 'ap_qe_match' FAILED at time: 3ns (2 clk), ../dut/seq_event.sv(14), scope: seq_event1.dut, start-time: 3ns (2 clk)
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 3500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 3ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 6300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 5ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 7ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 7ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 7ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 5ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 7ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 3ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 7700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 7ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 9100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 9ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 11900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 11ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 16100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 15ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 17ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 17ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 17500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 17ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 19ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 19ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 20300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 19ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 21ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 21ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 21700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 21ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 23ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 23ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 23100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 23ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 25ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 25ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 25900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 25ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 27ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 27ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 27300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 27ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 29ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 29ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 30100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 29ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 31ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 31ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 31500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 31ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 33ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 33ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 34300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 33ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 35ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 35ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 35700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 35ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 37ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 37ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 37100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 37ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 39ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 39ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 39900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 39ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 41ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 41ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 41300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 41ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 43ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 43ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 44100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 43ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 45ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 45ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 45500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 45ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 47ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 47ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 48300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 47ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 49ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 49ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 49700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 49ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 51ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 51ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 51100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 51ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 53ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 53ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 53900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 53ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 55ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 55ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 55300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 55ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 57ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 57ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 58100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 57ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 59ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 59ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 59500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 59ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 61ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 61ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 62300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 61ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 63ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 63ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 63700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 63ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 65ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 65ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 65100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 65ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 67ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 67ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 67900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 67ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 69ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 69ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 69300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 69ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 71ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 71ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 72100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 71ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 73ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 73ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 73500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 73ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 75ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 75ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 76300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 75ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 77ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 77ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 77700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 77ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 79ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 79ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 79100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 79ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 81ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 81ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 81900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 81ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 83ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 83ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 83300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 83ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 85ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 85ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 86100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 85ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 87ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 87ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 87500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 87ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 89ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 89ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 90300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 89ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 91ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 91ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 91700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 91ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 93ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 93ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 93100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 93ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 95ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 95ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 95900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 95ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 97ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 97ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 97300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 97ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 99ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 99ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 100100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 99ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 101ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 101ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 101500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 101ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 103ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 103ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 104300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 103ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 105ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 105ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 105700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 105ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 107ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 107ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 107100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 107ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 109ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 109ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 109900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 109ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 111ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 111ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 111300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 111ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 113ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 113ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 114100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 113ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 115ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 115ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 115500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 115ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 117ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 117ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 118300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 117ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 119ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 119ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 119700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 119ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 121ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 121ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 121100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 121ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 123ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 123ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 123900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 123ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 125ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 125ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 125300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 125ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 127ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 127ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 128100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 127ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 129ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 129ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 129500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 129ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 131ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 131ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 132300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 131ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 133ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 133ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 133700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 133ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 135ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 135ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 135100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 135ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 137ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 137ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 137900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 137ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 139ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 139ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 139300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 139ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 141ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 141ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 142100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 141ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 143ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 143ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 143500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 143ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 145ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 145ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 146300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 145ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 147ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 147ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 147700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 147ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 149ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 149ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 149100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 149ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 151ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 151ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 151900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 151ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 153ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 153ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 153300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 153ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 155ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 155ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 156100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 155ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 157ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 157ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 157500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 157ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 159ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 159ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 160300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 159ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 161ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 161ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 161700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 161ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 163ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 163ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 163100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 163ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 165ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 165ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 165900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 165ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 167ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 167ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 167300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 167ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 169ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 169ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 170100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 169ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 171ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 171ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 171500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 171ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 173ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 173ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 174300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 173ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 175ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 175ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 175700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 175ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 177ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 177ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 177100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 177ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 179ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 179ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 179900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 179ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 181ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 181ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 181300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 181ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 183ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 183ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 184100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 183ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 185ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 185ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 185500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 185ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 187ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 187ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 188300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 187ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 189ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 189ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 189700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 189ns
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2/seq_event/uvm/UVM_ch3seqdelay.sv(38) @ 190.000 ns: Go2UVM [Go2UVM] End of reset
+# KERNEL: UVM_INFO @ 190.000 ns: Go2UVM [Go2UVM] Driving stimulus via UVM
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2/seq_event/uvm/UVM_ch3seqdelay.sv(43) @ 190.000 ns: Go2UVM [Go2UVM] Start of Test
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 191ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 191ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 191100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 191ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 193ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 193ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 193900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 193ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 195ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 195ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 195300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 195ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 197ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 197ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 198100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 197ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 199ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 199ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 199500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 199ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 201ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 201ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 202300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 201ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 203ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 203ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 203700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 203ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 205ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 205ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 205100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 205ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 207ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 207ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 207900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 207ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 209ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 209ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 209300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 209ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 211ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 211ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 212100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 211ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 213ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 213ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 213500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 213ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 215ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 215ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 216300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 215ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 217ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 217ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 217700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 217ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 219ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 219ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 219100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 219ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 221ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 221ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 221900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 221ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 223ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 223ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 223300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 223ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 225ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 225ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 226100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 225ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 227ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 227ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 227500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 227ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 229ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 229ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 230300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 229ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 231ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 231ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 231700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 231ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 233ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 233ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 233100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 233ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 235ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 235ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 235900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 235ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 237ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 237ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 237300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 237ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 239ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 239ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 240100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 239ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 241ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 241ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 241500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 241ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 243ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 243ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 244300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 243ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 245ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 245ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 245700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 245ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 247ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 247ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 247100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 247ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 249ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 249ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 249900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 249ns
+# KERNEL: Error: Assertion 'ap_qe_match0' FAILED at time: 250ns (13 clk), ../dut/seq_event.sv(11), scope: top.dut, start-time: 250ns (13 clk)
+# KERNEL: Error: Assertion 'ap_qe_match' FAILED at time: 250ns (13 clk), ../dut/seq_event.sv(14), scope: top.dut, start-time: 250ns (13 clk)
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 251ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 251ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 251300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 251ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 253ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 253ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 254100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 253ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 255ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 255ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 255500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 255ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 257ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 257ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 258300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 257ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 259ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 259ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 259700ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 259ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 261ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 261ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 261100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 261ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 263ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 263ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 263900ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 263ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 265ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 265ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 265300ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 265ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 267ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 267ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 268100ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 267ns
+# KERNEL: Error: Assertion 'ap_qseq' FAILED at time: 269ns, ../dut/seq_event.sv(17), scope: seq_event1.dut, start-time: 269ns
+# KERNEL: Error: Assertion 'ap_qe' FAILED at time: 269500ps, ../dut/seq_event.sv(10), scope: seq_event1.dut, start-time: 269ns
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2/seq_event/uvm/UVM_ch3seqdelay.sv(52) @ 270.000 ns: Go2UVM [Go2UVM] End of Test
+# KERNEL: UVM_INFO @ 270.000 ns: Go2UVM [Go2UVM] End of stimulus
+# KERNEL: UVM_INFO @ 270.000 ns: Go2UVM [Go2UVM] Thanks for using VW's Go2UVM Package, provide your feedback at http://www.go2uvm.org
+# KERNEL: 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :    9
+# KERNEL: UVM_WARNING :    0
+# KERNEL: UVM_ERROR :    0
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [Go2UVM]     7
+# KERNEL: [Go2UVM ]     1
+# KERNEL: [RNTST]     1
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (433): $finish called.
+# KERNEL: Time: 270 ns,  Iteration: 67,  Instance: /top,  Process: @INITIAL#77_1@.
+# KERNEL: stopped at time: 270 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+quit
+# KERNEL: Warning: Assertion 'ap_qe' NOT FINISHED, ../dut/seq_event.sv(10), scope: top.dut, start-time: 250ns
+# KERNEL: Warning: Assertion 'ap_qseq' NOT FINISHED, ../dut/seq_event.sv(17), scope: top.dut, start-time: 250ns
+# VSIM: Simulation has finished.

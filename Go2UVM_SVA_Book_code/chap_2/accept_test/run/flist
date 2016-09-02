@@ -1,0 +1,9 @@
++incdir+$VW_GO2UVM_HOME/
+$VW_GO2UVM_HOME/src/vw_go2uvm_pkg.sv
+
+
+
+../dut/accept_test.sv
+../go2uvm/accept_test_go2uvm.sv
+
+

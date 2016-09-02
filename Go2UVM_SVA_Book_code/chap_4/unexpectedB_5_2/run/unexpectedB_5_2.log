@@ -1,0 +1,158 @@
+asim +access +rw  $UVMSIM +UVM_VERBOSITY=UVM_FULL
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.9 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/home/student/tools/eda/RVRA_2015.02/bin/libsystf.so'
+# KERNEL: Info: Loading library:  /home/student/tools/eda/RVRA_2015.02/bin/uvm_1_1d_dpi
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: uvm.sv (77): Length of connection (1) does not match the length of port "s_bits" (2) on instance "/top/dut".
+# SLP: Elaboration phase ... done : 0.3 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.6 [s]
+# SLP: Finished : 0.9 [s]
+# SLP: 0 primitives and 4 (57.14%) other processes in SLP
+# SLP: 4 (0.02%) signals in SLP and 19 (0.07%) interface signals
+# ELAB2: Elaboration final pass complete - time: 3.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 44701 kB (elbread=21735 elab2=20631 kernel=2334 sdf=0)
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.1  d
+# KERNEL: (C) 2007-2013 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2013 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2013 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: Assertion failures tracking enabled, report enabled, unlimited, action Continue. Assertion passes tracking enabled, report disabled, unlimited.
+# KERNEL: ASDB file was created in location /home/student/arlin/Chap_4_corrected/Done/unexpectedB_5_2/run/dataset.asdb
+wave -rec sim:/* 
+run -all;
+# KERNEL: UVM_INFO @ 0: Go2UVM [Go2UVM ] RELNOTES
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: (C) 2004-2014 CVC Pvt Ltd. 
+# KERNEL:  CVC_Go2UVM Version 1.1d.5 (CVC http://www.cvcblr.com )
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the Go2UVM Package from CVC www.cvcblr.com
+# KERNEL:   See http://www.go2uvm.org for more details 
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test ...
+# KERNEL: UVM_INFO /home/student/arlin/Chap_4_corrected/Done/unexpectedB_5_2/uvm/uvm.sv(39) @ 0.000 ns: Go2UVM [Go2UVM] Start of reset
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 50ps (6 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 40ps (5 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 60ps (7 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 50ps (6 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 70ps (8 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 60ps (7 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 80ps (9 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 70ps (8 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 90ps (10 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 80ps (9 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 100ps (11 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 90ps (10 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 110ps (12 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 100ps (11 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 120ps (13 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 110ps (12 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 130ps (14 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 120ps (13 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 140ps (15 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 130ps (14 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 150ps (16 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 140ps (15 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 160ps (17 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 150ps (16 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 170ps (18 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 160ps (17 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 180ps (19 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 170ps (18 clk)
+# KERNEL: UVM_INFO /home/student/arlin/Chap_4_corrected/Done/unexpectedB_5_2/uvm/uvm.sv(41) @ 0.190 ns: Go2UVM [Go2UVM] End of reset
+# KERNEL: UVM_INFO @ 0.190 ns: Go2UVM [Go2UVM] Driving stimulus via UVM
+# KERNEL: UVM_INFO /home/student/arlin/Chap_4_corrected/Done/unexpectedB_5_2/uvm/uvm.sv(46) @ 0.190 ns: Go2UVM [Go2UVM] Start of Test
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 190ps (20 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 180ps (19 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 200ps (21 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 190ps (20 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 210ps (22 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 200ps (21 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 220ps (23 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 210ps (22 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 230ps (24 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 220ps (23 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 240ps (25 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 230ps (24 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 250ps (26 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 240ps (25 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 260ps (27 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 250ps (26 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 270ps (28 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 260ps (27 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 280ps (29 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 270ps (28 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 290ps (30 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 280ps (29 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 300ps (31 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 290ps (30 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 310ps (32 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 300ps (31 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 320ps (33 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 310ps (32 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 330ps (34 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 320ps (33 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 340ps (35 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 330ps (34 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 350ps (36 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 340ps (35 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 360ps (37 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 350ps (36 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 370ps (38 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 360ps (37 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 380ps (39 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 370ps (38 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 390ps (40 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 380ps (39 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 400ps (41 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 390ps (40 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 410ps (21 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 390ps (20 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 410ps (21 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 370ps (19 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 410ps (42 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 400ps (41 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 420ps (43 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 410ps (42 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 430ps (22 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 410ps (21 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 430ps (44 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 420ps (43 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 440ps (45 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 430ps (44 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 450ps (23 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 430ps (22 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 450ps (46 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 440ps (45 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 460ps (47 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 450ps (46 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 470ps (24 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 450ps (23 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 470ps (48 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 460ps (47 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 480ps (49 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 470ps (48 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 490ps (25 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 470ps (24 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 490ps (50 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 480ps (49 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 500ps (51 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 490ps (50 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 510ps (26 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 490ps (25 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 510ps (52 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 500ps (51 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 520ps (53 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 510ps (52 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 530ps (27 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 510ps (26 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 530ps (54 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 520ps (53 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 540ps (55 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 530ps (54 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 550ps (28 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 530ps (27 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 550ps (56 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 540ps (55 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 560ps (57 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 550ps (56 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 570ps (29 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 550ps (28 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 570ps (58 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 560ps (57 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 580ps (59 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 570ps (58 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 590ps (30 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 570ps (29 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 590ps (60 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 580ps (59 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 600ps (61 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 590ps (60 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 610ps (31 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 590ps (30 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 610ps (62 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 600ps (61 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 620ps (63 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 610ps (62 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 630ps (32 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 610ps (31 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 630ps (64 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 620ps (63 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 640ps (65 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 630ps (64 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 650ps (33 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 630ps (32 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 650ps (66 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 640ps (65 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 660ps (67 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 650ps (66 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 670ps (34 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 650ps (33 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 670ps (68 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 660ps (67 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 680ps (69 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 670ps (68 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 690ps (35 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 670ps (34 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 690ps (70 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 680ps (69 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 700ps (71 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 690ps (70 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 710ps (36 clk), ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 690ps (35 clk)
+# KERNEL: Error: Assertion 'UA1' FAILED at time: 710ps (72 clk), ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 700ps (71 clk)
+# RUNTIME: Info: RUNTIME_0070 tb.sv (32): $stop called.
+# KERNEL: Time: 720 ps,  Iteration: 1,  Instance: /top1,  Process: @INITIAL#19_3@.
+# KERNEL: Stopped at time 720 ps + 1.
+quit
+# KERNEL: Warning: Assertion 'UA1' NOT FINISHED, ../dut/unexpectedB_5_2.sv(38), scope: top.dut, start-time: 710ps (36 clk)
+# KERNEL: Warning: Assertion 'UA1' NOT FINISHED, ../dut/unexpectedB_5_2.sv(38), scope: top1.dut, start-time: 710ps (72 clk)
+# VSIM: Simulation has finished.

@@ -1,0 +1,609 @@
+asim +access +rw  $UVMSIM +UVM_VERBOSITY=UVM_FULL
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'top1' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'sva_if' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'or_multi' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'vw_go2uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'std' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 1.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 100ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/home/student/tools/eda/RVRA_2015.02/bin/libsystf.so'
+# KERNEL: Info: Loading library:  /home/student/tools/eda/RVRA_2015.02/bin/uvm_1_1d_dpi
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.3 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.5 [s]
+# SLP: Finished : 0.8 [s]
+# SLP: 0 primitives and 3 (21.43%) other processes in SLP
+# SLP: 18 (0.07%) signals in SLP and 74 (0.28%) interface signals
+# ELAB2: Elaboration final pass complete - time: 4.7 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 45770 kB (elbread=21735 elab2=21697 kernel=2336 sdf=0)
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.1  d
+# KERNEL: (C) 2007-2013 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2013 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2013 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: Assertion failures tracking enabled, report enabled, unlimited, action Continue. Assertion passes tracking enabled, report disabled, unlimited.
+# KERNEL: ASDB file was created in location /home/student/Rajeswari/chap_2_corrected/ch2_others/or_multi/run/dataset.asdb
+wave -rec sim:/* 
+run -all;
+# KERNEL: UVM_INFO @ 0: Go2UVM [Go2UVM ] RELNOTES
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: (C) 2004-2014 VerifWorks a venture of CVC Pvt Ltd. 
+# KERNEL:  VW_Go2UVM Version 1.1d.5 (VerifWorks a venture of CVC Pvt Ltd http://www.verifworks.com )
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the Go2UVM Package from VerifWorks a venture of CVC Pvt Ltd www.verifworks.com
+# KERNEL:   See http://www.go2uvm.org for more details 
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test ...
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2_others/or_multi/uvm/or_multi.sv(42) @ 0.000 ns: Go2UVM [Go2UVM] Start of reset
+# KERNEL: Error: Assertion 'ap_abcd' FAILED at time: 9ns (5 clk), ../dut/or_multi.sv(23), scope: top1.dut, start-time: 7ns (4 clk)
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 9ns (5 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 7ns (4 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 11ns (6 clk) with alternative data values was dropped at time 11ns (6 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: EOT
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 13ns (7 clk) with alternative data values was dropped at time 13ns (7 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 13ns (7 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 11ns (6 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 15ns (8 clk) with alternative data values was dropped at time 15ns (8 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 15ns (8 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 13ns (7 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 17ns (9 clk) with alternative data values was dropped at time 17ns (9 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 17ns (9 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 15ns (8 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 19ns (10 clk) with alternative data values was dropped at time 19ns (10 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 19ns (10 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 17ns (9 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 21ns (11 clk) with alternative data values was dropped at time 21ns (11 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 21ns (11 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 19ns (10 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 23ns (12 clk) with alternative data values was dropped at time 23ns (12 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 23ns (12 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 21ns (11 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 25ns (13 clk) with alternative data values was dropped at time 25ns (13 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 25ns (13 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 23ns (12 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 27ns (14 clk) with alternative data values was dropped at time 27ns (14 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 27ns (14 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 25ns (13 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 29ns (15 clk) with alternative data values was dropped at time 29ns (15 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 29ns (15 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 27ns (14 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 31ns (16 clk) with alternative data values was dropped at time 31ns (16 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 31ns (16 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 29ns (15 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 33ns (17 clk) with alternative data values was dropped at time 33ns (17 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 33ns (17 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 31ns (16 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 35ns (18 clk) with alternative data values was dropped at time 35ns (18 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 35ns (18 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 33ns (17 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 37ns (19 clk) with alternative data values was dropped at time 37ns (19 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 37ns (19 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 35ns (18 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 39ns (20 clk) with alternative data values was dropped at time 39ns (20 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 39ns (20 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 37ns (19 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 41ns (21 clk) with alternative data values was dropped at time 41ns (21 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 41ns (21 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 39ns (20 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 43ns (22 clk) with alternative data values was dropped at time 43ns (22 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 43ns (22 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 41ns (21 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 45ns (23 clk) with alternative data values was dropped at time 45ns (23 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 45ns (23 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 43ns (22 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 47ns (24 clk) with alternative data values was dropped at time 47ns (24 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 47ns (24 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 45ns (23 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 49ns (25 clk) with alternative data values was dropped at time 49ns (25 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 49ns (25 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 47ns (24 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 51ns (26 clk) with alternative data values was dropped at time 51ns (26 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 51ns (26 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 49ns (25 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 53ns (27 clk) with alternative data values was dropped at time 53ns (27 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 53ns (27 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 51ns (26 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 55ns (28 clk) with alternative data values was dropped at time 55ns (28 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 55ns (28 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 53ns (27 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 57ns (29 clk) with alternative data values was dropped at time 57ns (29 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 57ns (29 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 55ns (28 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 59ns (30 clk) with alternative data values was dropped at time 59ns (30 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 59ns (30 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 57ns (29 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 61ns (31 clk) with alternative data values was dropped at time 61ns (31 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 61ns (31 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 59ns (30 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 63ns (32 clk) with alternative data values was dropped at time 63ns (32 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 63ns (32 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 61ns (31 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 65ns (33 clk) with alternative data values was dropped at time 65ns (33 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 65ns (33 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 63ns (32 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 67ns (34 clk) with alternative data values was dropped at time 67ns (34 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 67ns (34 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 65ns (33 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 69ns (35 clk) with alternative data values was dropped at time 69ns (35 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 69ns (35 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 67ns (34 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 71ns (36 clk) with alternative data values was dropped at time 71ns (36 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 71ns (36 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 69ns (35 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 73ns (37 clk) with alternative data values was dropped at time 73ns (37 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 73ns (37 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 71ns (36 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 75ns (38 clk) with alternative data values was dropped at time 75ns (38 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 75ns (38 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 73ns (37 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 77ns (39 clk) with alternative data values was dropped at time 77ns (39 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 77ns (39 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 75ns (38 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 79ns (40 clk) with alternative data values was dropped at time 79ns (40 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 79ns (40 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 77ns (39 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 81ns (41 clk) with alternative data values was dropped at time 81ns (41 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 81ns (41 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 79ns (40 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 83ns (42 clk) with alternative data values was dropped at time 83ns (42 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 83ns (42 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 81ns (41 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 85ns (43 clk) with alternative data values was dropped at time 85ns (43 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 85ns (43 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 83ns (42 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 87ns (44 clk) with alternative data values was dropped at time 87ns (44 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 87ns (44 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 85ns (43 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 89ns (45 clk) with alternative data values was dropped at time 89ns (45 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 89ns (45 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 87ns (44 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 91ns (46 clk) with alternative data values was dropped at time 91ns (46 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 91ns (46 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 89ns (45 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 93ns (47 clk) with alternative data values was dropped at time 93ns (47 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 93ns (47 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 91ns (46 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 95ns (48 clk) with alternative data values was dropped at time 95ns (48 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 95ns (48 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 93ns (47 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 97ns (49 clk) with alternative data values was dropped at time 97ns (49 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 97ns (49 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 95ns (48 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 99ns (50 clk) with alternative data values was dropped at time 99ns (50 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 99ns (50 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 97ns (49 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 101ns (51 clk) with alternative data values was dropped at time 101ns (51 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 101ns (51 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 99ns (50 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 103ns (52 clk) with alternative data values was dropped at time 103ns (52 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 103ns (52 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 101ns (51 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 105ns (53 clk) with alternative data values was dropped at time 105ns (53 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 105ns (53 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 103ns (52 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 107ns (54 clk) with alternative data values was dropped at time 107ns (54 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 107ns (54 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 105ns (53 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 109ns (55 clk) with alternative data values was dropped at time 109ns (55 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 109ns (55 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 107ns (54 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 111ns (56 clk) with alternative data values was dropped at time 111ns (56 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 111ns (56 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 109ns (55 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 113ns (57 clk) with alternative data values was dropped at time 113ns (57 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 113ns (57 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 111ns (56 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 115ns (58 clk) with alternative data values was dropped at time 115ns (58 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 115ns (58 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 113ns (57 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 117ns (59 clk) with alternative data values was dropped at time 117ns (59 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 117ns (59 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 115ns (58 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 119ns (60 clk) with alternative data values was dropped at time 119ns (60 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 119ns (60 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 117ns (59 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 121ns (61 clk) with alternative data values was dropped at time 121ns (61 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 121ns (61 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 119ns (60 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 123ns (62 clk) with alternative data values was dropped at time 123ns (62 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 123ns (62 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 121ns (61 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 125ns (63 clk) with alternative data values was dropped at time 125ns (63 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 125ns (63 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 123ns (62 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 127ns (64 clk) with alternative data values was dropped at time 127ns (64 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 127ns (64 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 125ns (63 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 129ns (65 clk) with alternative data values was dropped at time 129ns (65 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 129ns (65 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 127ns (64 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 131ns (66 clk) with alternative data values was dropped at time 131ns (66 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 131ns (66 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 129ns (65 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 133ns (67 clk) with alternative data values was dropped at time 133ns (67 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 133ns (67 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 131ns (66 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 135ns (68 clk) with alternative data values was dropped at time 135ns (68 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 135ns (68 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 133ns (67 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 137ns (69 clk) with alternative data values was dropped at time 137ns (69 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 137ns (69 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 135ns (68 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 139ns (70 clk) with alternative data values was dropped at time 139ns (70 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 139ns (70 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 137ns (69 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 141ns (71 clk) with alternative data values was dropped at time 141ns (71 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 141ns (71 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 139ns (70 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 143ns (72 clk) with alternative data values was dropped at time 143ns (72 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 143ns (72 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 141ns (71 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 145ns (73 clk) with alternative data values was dropped at time 145ns (73 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 145ns (73 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 143ns (72 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 147ns (74 clk) with alternative data values was dropped at time 147ns (74 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 147ns (74 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 145ns (73 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 149ns (75 clk) with alternative data values was dropped at time 149ns (75 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 149ns (75 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 147ns (74 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 151ns (76 clk) with alternative data values was dropped at time 151ns (76 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 151ns (76 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 149ns (75 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 153ns (77 clk) with alternative data values was dropped at time 153ns (77 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 153ns (77 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 151ns (76 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 155ns (78 clk) with alternative data values was dropped at time 155ns (78 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 155ns (78 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 153ns (77 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 157ns (79 clk) with alternative data values was dropped at time 157ns (79 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 157ns (79 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 155ns (78 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 159ns (80 clk) with alternative data values was dropped at time 159ns (80 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 159ns (80 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 157ns (79 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 161ns (81 clk) with alternative data values was dropped at time 161ns (81 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 161ns (81 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 159ns (80 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 163ns (82 clk) with alternative data values was dropped at time 163ns (82 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 163ns (82 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 161ns (81 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 165ns (83 clk) with alternative data values was dropped at time 165ns (83 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 165ns (83 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 163ns (82 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 167ns (84 clk) with alternative data values was dropped at time 167ns (84 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 167ns (84 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 165ns (83 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 169ns (85 clk) with alternative data values was dropped at time 169ns (85 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 169ns (85 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 167ns (84 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 171ns (86 clk) with alternative data values was dropped at time 171ns (86 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 171ns (86 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 169ns (85 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 173ns (87 clk) with alternative data values was dropped at time 173ns (87 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 173ns (87 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 171ns (86 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 175ns (88 clk) with alternative data values was dropped at time 175ns (88 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 175ns (88 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 173ns (87 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 177ns (89 clk) with alternative data values was dropped at time 177ns (89 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 177ns (89 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 175ns (88 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 179ns (90 clk) with alternative data values was dropped at time 179ns (90 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 179ns (90 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 177ns (89 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 181ns (91 clk) with alternative data values was dropped at time 181ns (91 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 181ns (91 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 179ns (90 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 183ns (92 clk) with alternative data values was dropped at time 183ns (92 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 183ns (92 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 181ns (91 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 185ns (93 clk) with alternative data values was dropped at time 185ns (93 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 185ns (93 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 183ns (92 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 187ns (94 clk) with alternative data values was dropped at time 187ns (94 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 187ns (94 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 185ns (93 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 189ns (95 clk) with alternative data values was dropped at time 189ns (95 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 189ns (95 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 187ns (94 clk)
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2_others/or_multi/uvm/or_multi.sv(44) @ 190.000 ns: Go2UVM [Go2UVM] End of reset
+# KERNEL: UVM_INFO @ 190.000 ns: Go2UVM [Go2UVM] Driving stimulus via UVM
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2_others/or_multi/uvm/or_multi.sv(48) @ 190.000 ns: Go2UVM [Go2UVM] Start of Test
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 191ns (96 clk) with alternative data values was dropped at time 191ns (96 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 191ns (96 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 189ns (95 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 193ns (97 clk) with alternative data values was dropped at time 193ns (97 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 193ns (97 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 191ns (96 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 195ns (98 clk) with alternative data values was dropped at time 195ns (98 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 195ns (98 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 193ns (97 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 197ns (99 clk) with alternative data values was dropped at time 197ns (99 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 197ns (99 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 195ns (98 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 199ns (100 clk) with alternative data values was dropped at time 199ns (100 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 199ns (100 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 197ns (99 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 201ns (101 clk) with alternative data values was dropped at time 201ns (101 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 201ns (101 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 199ns (100 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 203ns (102 clk) with alternative data values was dropped at time 203ns (102 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 203ns (102 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 201ns (101 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 205ns (103 clk) with alternative data values was dropped at time 205ns (103 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 205ns (103 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 203ns (102 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 207ns (104 clk) with alternative data values was dropped at time 207ns (104 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 207ns (104 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 205ns (103 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 209ns (105 clk) with alternative data values was dropped at time 209ns (105 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 209ns (105 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 207ns (104 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 211ns (106 clk) with alternative data values was dropped at time 211ns (106 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 211ns (106 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 209ns (105 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 213ns (107 clk) with alternative data values was dropped at time 213ns (107 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 213ns (107 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 211ns (106 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 215ns (108 clk) with alternative data values was dropped at time 215ns (108 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 215ns (108 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 213ns (107 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 217ns (109 clk) with alternative data values was dropped at time 217ns (109 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 217ns (109 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 215ns (108 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 219ns (110 clk) with alternative data values was dropped at time 219ns (110 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 219ns (110 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 217ns (109 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 221ns (111 clk) with alternative data values was dropped at time 221ns (111 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 221ns (111 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 219ns (110 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 223ns (112 clk) with alternative data values was dropped at time 223ns (112 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 223ns (112 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 221ns (111 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 225ns (113 clk) with alternative data values was dropped at time 225ns (113 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 225ns (113 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 223ns (112 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 227ns (114 clk) with alternative data values was dropped at time 227ns (114 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 227ns (114 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 225ns (113 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 229ns (115 clk) with alternative data values was dropped at time 229ns (115 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 229ns (115 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 227ns (114 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 231ns (116 clk) with alternative data values was dropped at time 231ns (116 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 231ns (116 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 229ns (115 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 233ns (117 clk) with alternative data values was dropped at time 233ns (117 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 233ns (117 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 231ns (116 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 235ns (118 clk) with alternative data values was dropped at time 235ns (118 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 235ns (118 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 233ns (117 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 237ns (119 clk) with alternative data values was dropped at time 237ns (119 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 237ns (119 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 235ns (118 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 239ns (120 clk) with alternative data values was dropped at time 239ns (120 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 239ns (120 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 237ns (119 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 241ns (121 clk) with alternative data values was dropped at time 241ns (121 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 241ns (121 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 239ns (120 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 243ns (122 clk) with alternative data values was dropped at time 243ns (122 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 243ns (122 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 241ns (121 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 245ns (123 clk) with alternative data values was dropped at time 245ns (123 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 245ns (123 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 243ns (122 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 247ns (124 clk) with alternative data values was dropped at time 247ns (124 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 247ns (124 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 245ns (123 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 249ns (125 clk) with alternative data values was dropped at time 249ns (125 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 249ns (125 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 247ns (124 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 251ns (126 clk) with alternative data values was dropped at time 251ns (126 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 251ns (126 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 249ns (125 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 253ns (127 clk) with alternative data values was dropped at time 253ns (127 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 253ns (127 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 251ns (126 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 255ns (128 clk) with alternative data values was dropped at time 255ns (128 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 255ns (128 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 253ns (127 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 257ns (129 clk) with alternative data values was dropped at time 257ns (129 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 257ns (129 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 255ns (128 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 259ns (130 clk) with alternative data values was dropped at time 259ns (130 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 259ns (130 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 257ns (129 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 261ns (131 clk) with alternative data values was dropped at time 261ns (131 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 261ns (131 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 259ns (130 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 263ns (132 clk) with alternative data values was dropped at time 263ns (132 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 263ns (132 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 261ns (131 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 265ns (133 clk) with alternative data values was dropped at time 265ns (133 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 265ns (133 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 263ns (132 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 267ns (134 clk) with alternative data values was dropped at time 267ns (134 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 267ns (134 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 265ns (133 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 269ns (135 clk) with alternative data values was dropped at time 269ns (135 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 269ns (135 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 267ns (134 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 271ns (136 clk) with alternative data values was dropped at time 271ns (136 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 271ns (136 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 269ns (135 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 273ns (137 clk) with alternative data values was dropped at time 273ns (137 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 273ns (137 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 271ns (136 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 275ns (138 clk) with alternative data values was dropped at time 275ns (138 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 275ns (138 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 273ns (137 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 277ns (139 clk) with alternative data values was dropped at time 277ns (139 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 277ns (139 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 275ns (138 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 279ns (140 clk) with alternative data values was dropped at time 279ns (140 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 279ns (140 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 277ns (139 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 281ns (141 clk) with alternative data values was dropped at time 281ns (141 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 281ns (141 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 279ns (140 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 283ns (142 clk) with alternative data values was dropped at time 283ns (142 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 283ns (142 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 281ns (141 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 285ns (143 clk) with alternative data values was dropped at time 285ns (143 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 285ns (143 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 283ns (142 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 287ns (144 clk) with alternative data values was dropped at time 287ns (144 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 287ns (144 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 285ns (143 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 289ns (145 clk) with alternative data values was dropped at time 289ns (145 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 289ns (145 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 287ns (144 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 291ns (146 clk) with alternative data values was dropped at time 291ns (146 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 291ns (146 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 289ns (145 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 293ns (147 clk) with alternative data values was dropped at time 293ns (147 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 293ns (147 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 291ns (146 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 295ns (148 clk) with alternative data values was dropped at time 295ns (148 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 295ns (148 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 293ns (147 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 297ns (149 clk) with alternative data values was dropped at time 297ns (149 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 297ns (149 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 295ns (148 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 299ns (150 clk) with alternative data values was dropped at time 299ns (150 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 299ns (150 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 297ns (149 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 301ns (151 clk) with alternative data values was dropped at time 301ns (151 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 301ns (151 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 299ns (150 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 303ns (152 clk) with alternative data values was dropped at time 303ns (152 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 303ns (152 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 301ns (151 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 305ns (153 clk) with alternative data values was dropped at time 305ns (153 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 305ns (153 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 303ns (152 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 307ns (154 clk) with alternative data values was dropped at time 307ns (154 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 307ns (154 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 305ns (153 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 309ns (155 clk) with alternative data values was dropped at time 309ns (155 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 309ns (155 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 307ns (154 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 311ns (156 clk) with alternative data values was dropped at time 311ns (156 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 311ns (156 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 309ns (155 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 313ns (157 clk) with alternative data values was dropped at time 313ns (157 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 313ns (157 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 311ns (156 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 315ns (158 clk) with alternative data values was dropped at time 315ns (158 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 315ns (158 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 313ns (157 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 317ns (159 clk) with alternative data values was dropped at time 317ns (159 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 317ns (159 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 315ns (158 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 319ns (160 clk) with alternative data values was dropped at time 319ns (160 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 319ns (160 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 317ns (159 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 321ns (161 clk) with alternative data values was dropped at time 321ns (161 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 321ns (161 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 319ns (160 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 323ns (162 clk) with alternative data values was dropped at time 323ns (162 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 323ns (162 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 321ns (161 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 325ns (163 clk) with alternative data values was dropped at time 325ns (163 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 325ns (163 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 323ns (162 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 327ns (164 clk) with alternative data values was dropped at time 327ns (164 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 327ns (164 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 325ns (163 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 329ns (165 clk) with alternative data values was dropped at time 329ns (165 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 329ns (165 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 327ns (164 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 331ns (166 clk) with alternative data values was dropped at time 331ns (166 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 331ns (166 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 329ns (165 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 333ns (167 clk) with alternative data values was dropped at time 333ns (167 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 333ns (167 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 331ns (166 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 335ns (168 clk) with alternative data values was dropped at time 335ns (168 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 335ns (168 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 333ns (167 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 337ns (169 clk) with alternative data values was dropped at time 337ns (169 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 337ns (169 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 335ns (168 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 339ns (170 clk) with alternative data values was dropped at time 339ns (170 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 339ns (170 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 337ns (169 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 341ns (171 clk) with alternative data values was dropped at time 341ns (171 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 341ns (171 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 339ns (170 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 343ns (172 clk) with alternative data values was dropped at time 343ns (172 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 343ns (172 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 341ns (171 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 345ns (173 clk) with alternative data values was dropped at time 345ns (173 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 345ns (173 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 343ns (172 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 347ns (174 clk) with alternative data values was dropped at time 347ns (174 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 347ns (174 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 345ns (173 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 349ns (175 clk) with alternative data values was dropped at time 349ns (175 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 349ns (175 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 347ns (174 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 351ns (176 clk) with alternative data values was dropped at time 351ns (176 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 351ns (176 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 349ns (175 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 353ns (177 clk) with alternative data values was dropped at time 353ns (177 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 353ns (177 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 351ns (176 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 355ns (178 clk) with alternative data values was dropped at time 355ns (178 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 355ns (178 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 353ns (177 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 357ns (179 clk) with alternative data values was dropped at time 357ns (179 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 357ns (179 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 355ns (178 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 359ns (180 clk) with alternative data values was dropped at time 359ns (180 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 359ns (180 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 357ns (179 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 361ns (181 clk) with alternative data values was dropped at time 361ns (181 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 361ns (181 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 359ns (180 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 363ns (182 clk) with alternative data values was dropped at time 363ns (182 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 363ns (182 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 361ns (181 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 365ns (183 clk) with alternative data values was dropped at time 365ns (183 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 365ns (183 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 363ns (182 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 367ns (184 clk) with alternative data values was dropped at time 367ns (184 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 367ns (184 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 365ns (183 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 369ns (185 clk) with alternative data values was dropped at time 369ns (185 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 369ns (185 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 367ns (184 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 371ns (186 clk) with alternative data values was dropped at time 371ns (186 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 371ns (186 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 369ns (185 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 373ns (187 clk) with alternative data values was dropped at time 373ns (187 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 373ns (187 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 371ns (186 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 375ns (188 clk) with alternative data values was dropped at time 375ns (188 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 375ns (188 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 373ns (187 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 377ns (189 clk) with alternative data values was dropped at time 377ns (189 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 377ns (189 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 375ns (188 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 379ns (190 clk) with alternative data values was dropped at time 379ns (190 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 379ns (190 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 377ns (189 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 381ns (191 clk) with alternative data values was dropped at time 381ns (191 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 381ns (191 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 379ns (190 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 383ns (192 clk) with alternative data values was dropped at time 383ns (192 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 383ns (192 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 381ns (191 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 385ns (193 clk) with alternative data values was dropped at time 385ns (193 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 385ns (193 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 383ns (192 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 387ns (194 clk) with alternative data values was dropped at time 387ns (194 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 387ns (194 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 385ns (193 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 389ns (195 clk) with alternative data values was dropped at time 389ns (195 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 389ns (195 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 387ns (194 clk)
+# KERNEL: Error: Assertion 'ap_abcd' FAILED at time: 390ns (20 clk), ../dut/or_multi.sv(23), scope: top.dut, start-time: 370ns (19 clk)
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 390ns (20 clk), ../dut/or_multi.sv(24), scope: top.dut, start-time: 370ns (19 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 391ns (196 clk) with alternative data values was dropped at time 391ns (196 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 391ns (196 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 389ns (195 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 393ns (197 clk) with alternative data values was dropped at time 393ns (197 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 393ns (197 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 391ns (196 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 395ns (198 clk) with alternative data values was dropped at time 395ns (198 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 395ns (198 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 393ns (197 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 397ns (199 clk) with alternative data values was dropped at time 397ns (199 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 397ns (199 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 395ns (198 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 399ns (200 clk) with alternative data values was dropped at time 399ns (200 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 399ns (200 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 397ns (199 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 401ns (201 clk) with alternative data values was dropped at time 401ns (201 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 401ns (201 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 399ns (200 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 403ns (202 clk) with alternative data values was dropped at time 403ns (202 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 403ns (202 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 401ns (201 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 405ns (203 clk) with alternative data values was dropped at time 405ns (203 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 405ns (203 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 403ns (202 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 407ns (204 clk) with alternative data values was dropped at time 407ns (204 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 407ns (204 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 405ns (203 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 409ns (205 clk) with alternative data values was dropped at time 409ns (205 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 409ns (205 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 407ns (204 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 410ns (21 clk) with alternative data values was dropped at time 410ns (21 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd' FAILED at time: 410ns (21 clk), ../dut/or_multi.sv(23), scope: top.dut, start-time: 390ns (20 clk)
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 410ns (21 clk), ../dut/or_multi.sv(24), scope: top.dut, start-time: 390ns (20 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 411ns (206 clk) with alternative data values was dropped at time 411ns (206 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 411ns (206 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 409ns (205 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 413ns (207 clk) with alternative data values was dropped at time 413ns (207 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 413ns (207 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 411ns (206 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 415ns (208 clk) with alternative data values was dropped at time 415ns (208 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 415ns (208 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 413ns (207 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 417ns (209 clk) with alternative data values was dropped at time 417ns (209 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 417ns (209 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 415ns (208 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 419ns (210 clk) with alternative data values was dropped at time 419ns (210 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 419ns (210 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 417ns (209 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 421ns (211 clk) with alternative data values was dropped at time 421ns (211 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 421ns (211 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 419ns (210 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 423ns (212 clk) with alternative data values was dropped at time 423ns (212 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 423ns (212 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 421ns (211 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 425ns (213 clk) with alternative data values was dropped at time 425ns (213 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 425ns (213 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 423ns (212 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 427ns (214 clk) with alternative data values was dropped at time 427ns (214 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 427ns (214 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 425ns (213 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 429ns (215 clk) with alternative data values was dropped at time 429ns (215 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 429ns (215 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 427ns (214 clk)
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 430ns (22 clk), ../dut/or_multi.sv(24), scope: top.dut, start-time: 410ns (21 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 431ns (216 clk) with alternative data values was dropped at time 431ns (216 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 431ns (216 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 429ns (215 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 433ns (217 clk) with alternative data values was dropped at time 433ns (217 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 433ns (217 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 431ns (216 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 435ns (218 clk) with alternative data values was dropped at time 435ns (218 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 435ns (218 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 433ns (217 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 437ns (219 clk) with alternative data values was dropped at time 437ns (219 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 437ns (219 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 435ns (218 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 439ns (220 clk) with alternative data values was dropped at time 439ns (220 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 439ns (220 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 437ns (219 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 441ns (221 clk) with alternative data values was dropped at time 441ns (221 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 441ns (221 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 439ns (220 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 443ns (222 clk) with alternative data values was dropped at time 443ns (222 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 443ns (222 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 441ns (221 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 445ns (223 clk) with alternative data values was dropped at time 445ns (223 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 445ns (223 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 443ns (222 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 447ns (224 clk) with alternative data values was dropped at time 447ns (224 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 447ns (224 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 445ns (223 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 449ns (225 clk) with alternative data values was dropped at time 449ns (225 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 449ns (225 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 447ns (224 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 451ns (226 clk) with alternative data values was dropped at time 451ns (226 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 451ns (226 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 449ns (225 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 453ns (227 clk) with alternative data values was dropped at time 453ns (227 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 453ns (227 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 451ns (226 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 455ns (228 clk) with alternative data values was dropped at time 455ns (228 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 455ns (228 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 453ns (227 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 457ns (229 clk) with alternative data values was dropped at time 457ns (229 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 457ns (229 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 455ns (228 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 459ns (230 clk) with alternative data values was dropped at time 459ns (230 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 459ns (230 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 457ns (229 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 461ns (231 clk) with alternative data values was dropped at time 461ns (231 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 461ns (231 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 459ns (230 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 463ns (232 clk) with alternative data values was dropped at time 463ns (232 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 463ns (232 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 461ns (231 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 465ns (233 clk) with alternative data values was dropped at time 465ns (233 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 465ns (233 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 463ns (232 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 467ns (234 clk) with alternative data values was dropped at time 467ns (234 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 467ns (234 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 465ns (233 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 469ns (235 clk) with alternative data values was dropped at time 469ns (235 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 469ns (235 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 467ns (234 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 471ns (236 clk) with alternative data values was dropped at time 471ns (236 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 471ns (236 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 469ns (235 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 473ns (237 clk) with alternative data values was dropped at time 473ns (237 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 473ns (237 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 471ns (236 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 475ns (238 clk) with alternative data values was dropped at time 475ns (238 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 475ns (238 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 473ns (237 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 477ns (239 clk) with alternative data values was dropped at time 477ns (239 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 477ns (239 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 475ns (238 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 479ns (240 clk) with alternative data values was dropped at time 479ns (240 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 479ns (240 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 477ns (239 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 481ns (241 clk) with alternative data values was dropped at time 481ns (241 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 481ns (241 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 479ns (240 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 483ns (242 clk) with alternative data values was dropped at time 483ns (242 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 483ns (242 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 481ns (241 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 485ns (243 clk) with alternative data values was dropped at time 485ns (243 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 485ns (243 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 483ns (242 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 487ns (244 clk) with alternative data values was dropped at time 487ns (244 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 487ns (244 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 485ns (243 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 489ns (245 clk) with alternative data values was dropped at time 489ns (245 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 489ns (245 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 487ns (244 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 490ns (25 clk) with alternative data values was dropped at time 490ns (25 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 491ns (246 clk) with alternative data values was dropped at time 491ns (246 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 491ns (246 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 489ns (245 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 493ns (247 clk) with alternative data values was dropped at time 493ns (247 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 493ns (247 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 491ns (246 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 495ns (248 clk) with alternative data values was dropped at time 495ns (248 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 495ns (248 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 493ns (247 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 497ns (249 clk) with alternative data values was dropped at time 497ns (249 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 497ns (249 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 495ns (248 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 499ns (250 clk) with alternative data values was dropped at time 499ns (250 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 499ns (250 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 497ns (249 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 501ns (251 clk) with alternative data values was dropped at time 501ns (251 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 501ns (251 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 499ns (250 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 503ns (252 clk) with alternative data values was dropped at time 503ns (252 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 503ns (252 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 501ns (251 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 505ns (253 clk) with alternative data values was dropped at time 505ns (253 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 505ns (253 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 503ns (252 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 507ns (254 clk) with alternative data values was dropped at time 507ns (254 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 507ns (254 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 505ns (253 clk)
+# AKERNEL: Warning: An extra evaluation of assertion 'ap_abcd' started at time 509ns (255 clk) with alternative data values was dropped at time 509ns (255 clk), ../dut/or_multi.sv(23). Enable extra feature to get all available results.
+# KERNEL: Error: Assertion 'ap_abcd_eqv' FAILED at time: 509ns (255 clk), ../dut/or_multi.sv(24), scope: top1.dut, start-time: 507ns (254 clk)
+# KERNEL: EOT
+# KERNEL: UVM_INFO /home/student/Rajeswari/chap_2_corrected/ch2_others/or_multi/uvm/or_multi.sv(68) @ 510.000 ns: Go2UVM [Go2UVM] End of Test
+# KERNEL: UVM_INFO @ 510.000 ns: Go2UVM [Go2UVM] End of stimulus
+# KERNEL: UVM_INFO @ 510.000 ns: Go2UVM [Go2UVM] Thanks for using VW's Go2UVM Package, provide your feedback at http://www.go2uvm.org
+# KERNEL: 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :    9
+# KERNEL: UVM_WARNING :    0
+# KERNEL: UVM_ERROR :    0
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [Go2UVM]     7
+# KERNEL: [Go2UVM ]     1
+# KERNEL: [RNTST]     1
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (433): $finish called.
+# KERNEL: Time: 510 ns,  Iteration: 67,  Instance: /top,  Process: @INITIAL#102_1@.
+# KERNEL: stopped at time: 510 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+quit
+# KERNEL: Warning: Assertion 'ap_abcd' NOT FINISHED, ../dut/or_multi.sv(23), scope: top.dut, start-time: 490ns (25 clk)
+# KERNEL: Warning: Assertion 'ap_abcd_eqv' NOT FINISHED, ../dut/or_multi.sv(24), scope: top.dut, start-time: 490ns (25 clk)
+# KERNEL: Warning: Assertion 'ap_1' NOT FINISHED, ../dut/or_multi.sv(26), scope: top.dut, start-time: 410ns (21 clk)
+# KERNEL: Warning: Assertion 'ap_abcd' NOT FINISHED, ../dut/or_multi.sv(23), scope: top1.dut, start-time: 509ns (255 clk)
+# KERNEL: Warning: Assertion 'ap_abcd_eqv' NOT FINISHED, ../dut/or_multi.sv(24), scope: top1.dut, start-time: 509ns (255 clk)
+# KERNEL: Warning: Assertion 'ap_and_legal' NOT FINISHED, ../dut/or_multi.sv(100), scope: top1.dut, start-time: 509ns (255 clk)
+# VSIM: Simulation has finished.

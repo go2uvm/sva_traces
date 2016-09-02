@@ -1,0 +1,6 @@
+# do rvra_run.do 
+# ** Error: invalid command name "clear"
+# Error in macro ./rvra_run.do line 2
+# invalid command name "clear"
+#     while executing
+# "clear"

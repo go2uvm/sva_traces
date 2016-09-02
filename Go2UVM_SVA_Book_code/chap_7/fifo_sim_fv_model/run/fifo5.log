@@ -1,0 +1,341 @@
+asim +access +rw  $UVMSIM +UVM_VERBOSITY=UVM_FULL
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module '\fifo_if \\fifo_if.fslave_if \\ \' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module '\fifo_if \\fifo_if.fdrvr_if \\ \' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'cvc_go2uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'fifo_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Package 'std' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 1.6 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 100ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/home/student/tools/eda/RVRA_2015.02/bin/libsystf.so'
+# KERNEL: Info: Loading library:  /home/student/tools/eda/RVRA_2015.02/bin/uvm_1_1d_dpi
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.2 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.5 [s]
+# SLP: Finished : 0.6 [s]
+# SLP: 0 primitives and 20 (32.26%) other processes in SLP
+# SLP: 31 (0.12%) signals in SLP and 163 (0.61%) interface signals
+# ELAB2: Elaboration final pass complete - time: 4.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 45912 kB (elbread=21735 elab2=21831 kernel=2344 sdf=0)
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.1  d
+# KERNEL: (C) 2007-2013 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2013 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2013 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: Assertion failures tracking enabled, report enabled, unlimited, action Continue. Assertion passes tracking enabled, report disabled, unlimited.
+# KERNEL: Cover tracking enabled, report enabled, action Continue. 
+# KERNEL: ASDB file was created in location /home/student/gaurav_task/fifo_sim_fv_model/run/dataset.asdb
+wave -rec sim:/* 
+run -all;
+# KERNEL: UVM_INFO @ 0: Go2UVM [Go2UVM ] RELNOTES
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: (C) 2004-2014 CVC Pvt Ltd. 
+# KERNEL:  CVC_Go2UVM Version 1.1d.5 (CVC http://www.cvcblr.com )
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the Go2UVM Package from CVC www.cvcblr.com
+# KERNEL:   See http://www.go2uvm.org for more details 
+# KERNEL: 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test ...
+# KERNEL: UVM_WARNING @ 0.000 ns: Go2UVM [Go2UVM] No implementation found for reset method. It is recommended to add reset driving logic to the extended class task reset; See user guide or http://www.go2uvm.org/cvc-go2uvm-pkg for more information
+# KERNEL: UVM_INFO @ 0.000 ns: Go2UVM [Go2UVM] Driving stimulus via UVM
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 10ns (1 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 10ns (1 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 10ns (1 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 10ns (1 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 10ns (1 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 10ns (1 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 30ns (2 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 10ns (1 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 30ns (2 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 10ns (1 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 30ns (2 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 30ns (2 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 30ns (2 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 30ns (2 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 30ns (2 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 30ns (2 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 50ns (3 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 30ns (2 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 50ns (3 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 30ns (2 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 50ns (3 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 50ns (3 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 50ns (3 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 50ns (3 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 50ns (3 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 50ns (3 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 50ns (1 clk), ../src/fifo_props.sv(85), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 50ns (1 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 50ns (1 clk), ../src/fifo_props.sv(88), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 50ns (1 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 50ns (1 clk), ../src/fifo_props.sv(90), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 50ns (1 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 70ns (4 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 50ns (3 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 70ns (4 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 50ns (3 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 70ns (4 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 70ns (4 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 70ns (4 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 70ns (4 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 70ns (4 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 70ns (4 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 90ns (5 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 70ns (4 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 90ns (5 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 70ns (4 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 90ns (5 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 90ns (5 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 90ns (5 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 90ns (5 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 90ns (5 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 90ns (5 clk)
+# KERNEL: 110.000 ns top.b_if.push_task Push data 12153524 
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 110ns (6 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 90ns (5 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 110ns (6 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 90ns (5 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 110ns (6 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 110ns (6 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 110ns (6 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 110ns (6 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 110ns (6 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 110ns (6 clk)
+# KERNEL: 130.000 ns top.b_if.push_task Push data b 
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 130ns (7 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 110ns (6 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 130ns (7 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 110ns (6 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 130ns (7 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 130ns (7 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 130ns (7 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 130ns (7 clk)
+# KERNEL: 150.000 ns top.b_if.push_task Push data 8484d609 
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 150ns (8 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 130ns (7 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 150ns (8 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 130ns (7 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 150ns (8 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 150ns (8 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 150ns (8 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 150ns (8 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 150ns (2 clk), ../src/fifo_props.sv(72), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 50ns (1 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 150ns (2 clk), ../src/fifo_props.sv(77), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 50ns (1 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 150ns (2 clk), ../src/fifo_props.sv(85), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 150ns (2 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 150ns (2 clk), ../src/fifo_props.sv(88), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 150ns (2 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 150ns (2 clk), ../src/fifo_props.sv(90), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 150ns (2 clk)
+# KERNEL: 170.000 ns top.b_if.push_task Push data b 
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 170ns (9 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 150ns (8 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 170ns (9 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 150ns (8 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 170ns (9 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 170ns (9 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 170ns (9 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 170ns (9 clk)
+# KERNEL: 190.000 ns top.b_if.push_task Push data 6b97b0d 
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 190ns (10 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 170ns (9 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 190ns (10 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 170ns (9 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 190ns (10 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 190ns (10 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 190ns (10 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 190ns (10 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 210ns (11 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 190ns (10 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 210ns (11 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 190ns (10 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 210ns (11 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 210ns (11 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 210ns (11 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 210ns (11 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 230ns (12 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 210ns (11 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 230ns (12 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 210ns (11 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 230ns (12 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 230ns (12 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 230ns (12 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 230ns (12 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 230ns (12 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 230ns (12 clk)
+# KERNEL: 250.000 ns top.b_if.push_task Push data b 
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 250ns (13 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 230ns (12 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 250ns (13 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 230ns (12 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 250ns (13 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 250ns (13 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 250ns (13 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 250ns (13 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 250ns (13 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 250ns (13 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 250ns (3 clk), ../src/fifo_props.sv(72), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 150ns (2 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 250ns (3 clk), ../src/fifo_props.sv(77), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 150ns (2 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 250ns (3 clk), ../src/fifo_props.sv(85), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 250ns (3 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 250ns (3 clk), ../src/fifo_props.sv(88), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 250ns (3 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 250ns (3 clk), ../src/fifo_props.sv(90), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 250ns (3 clk)
+# KERNEL: 270.000 ns top.b_if.push_task Push data b2c28465 
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 270ns (14 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 250ns (13 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 270ns (14 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 250ns (13 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 270ns (14 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 270ns (14 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 270ns (14 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 270ns (14 clk)
+# KERNEL: 290.000 ns top.b_if.push_task Push data b 
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 290ns (15 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 270ns (14 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 290ns (15 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 270ns (14 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 290ns (15 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 290ns (15 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 290ns (15 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 290ns (15 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 310ns (16 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 290ns (15 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 310ns (16 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 290ns (15 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 310ns (16 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 310ns (16 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 310ns (16 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 310ns (16 clk)
+# KERNEL: Error: Assertion 'ap_pop_error_1' FAILED at time: 330ns (17 clk), ../src/fifo_rtl2.sv(67), scope: top.dut, start-time: 330ns (17 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 330ns (17 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 310ns (16 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 330ns (17 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 310ns (16 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 330ns (17 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 330ns (17 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED at time: 330ns (17 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 310ns (16 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED at time: 330ns (17 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 290ns (15 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED at time: 330ns (17 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 270ns (14 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED at time: 330ns (17 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 210ns (11 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED at time: 330ns (17 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 190ns (10 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED at time: 330ns (17 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 170ns (9 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED at time: 330ns (17 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 150ns (8 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED at time: 330ns (17 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 130ns (7 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 330ns (17 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 330ns (17 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 330ns (17 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 330ns (17 clk)
+# KERNEL: Error: Assertion 'ap_pop_error' FAILED at time: 330ns (17 clk), ../src/fifo_if.sv(89), scope: top.b_if, start-time: 330ns (17 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 350ns (18 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 330ns (17 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 350ns (18 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 330ns (17 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 350ns (18 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 350ns (18 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 350ns (18 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 350ns (18 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 350ns (18 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 350ns (18 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 350ns (4 clk), ../src/fifo_props.sv(72), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 250ns (3 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 350ns (4 clk), ../src/fifo_props.sv(77), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 250ns (3 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 350ns (4 clk), ../src/fifo_props.sv(85), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 350ns (4 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 350ns (4 clk), ../src/fifo_props.sv(88), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 350ns (4 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 350ns (4 clk), ../src/fifo_props.sv(90), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 350ns (4 clk)
+# KERNEL: Error: Assertion 'ap_pop_error_1' FAILED at time: 370ns (19 clk), ../src/fifo_rtl2.sv(67), scope: top.dut, start-time: 370ns (19 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 370ns (19 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 350ns (18 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 370ns (19 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 350ns (18 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 370ns (19 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 370ns (19 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 370ns (19 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 370ns (19 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 370ns (19 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 370ns (19 clk)
+# KERNEL: Error: Assertion 'ap_pop_error' FAILED at time: 370ns (19 clk), ../src/fifo_if.sv(89), scope: top.b_if, start-time: 370ns (19 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 390ns (20 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 370ns (19 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 390ns (20 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 370ns (19 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 390ns (20 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 390ns (20 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 390ns (20 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 390ns (20 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 390ns (20 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 390ns (20 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 410ns (21 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 390ns (20 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 410ns (21 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 390ns (20 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 410ns (21 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 410ns (21 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 410ns (21 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 410ns (21 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 410ns (21 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 410ns (21 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 430ns (22 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 410ns (21 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 430ns (22 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 410ns (21 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 430ns (22 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 430ns (22 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 430ns (22 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 430ns (22 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 430ns (22 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 430ns (22 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 450ns (23 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 430ns (22 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 450ns (23 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 430ns (22 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 450ns (23 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 450ns (23 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 450ns (23 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 450ns (23 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 450ns (23 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 450ns (23 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 450ns (5 clk), ../src/fifo_props.sv(72), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 350ns (4 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 450ns (5 clk), ../src/fifo_props.sv(77), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 350ns (4 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 450ns (5 clk), ../src/fifo_props.sv(85), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 450ns (5 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 450ns (5 clk), ../src/fifo_props.sv(88), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 450ns (5 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 450ns (5 clk), ../src/fifo_props.sv(90), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 450ns (5 clk)
+# KERNEL: Error: Assertion 'ap_pop_error_1' FAILED at time: 470ns (24 clk), ../src/fifo_rtl2.sv(67), scope: top.dut, start-time: 470ns (24 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 470ns (24 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 450ns (23 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 470ns (24 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 450ns (23 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 470ns (24 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 470ns (24 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 470ns (24 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 470ns (24 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 470ns (24 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 470ns (24 clk)
+# KERNEL: Error: Assertion 'ap_pop_error' FAILED at time: 470ns (24 clk), ../src/fifo_if.sv(89), scope: top.b_if, start-time: 470ns (24 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 490ns (25 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 470ns (24 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 490ns (25 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 470ns (24 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 490ns (25 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 490ns (25 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 490ns (25 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 490ns (25 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 490ns (25 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 490ns (25 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 510ns (26 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 490ns (25 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 510ns (26 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 490ns (25 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 510ns (26 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 510ns (26 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 510ns (26 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 510ns (26 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 510ns (26 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 510ns (26 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 530ns (27 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 510ns (26 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 530ns (27 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 510ns (26 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 530ns (27 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 530ns (27 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 530ns (27 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 530ns (27 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 530ns (27 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 530ns (27 clk)
+# KERNEL: 550.000 ns fifo_tb.b_if.push_task Push data 1e8dcd3d 
+# KERNEL: Error: Assertion 'ap_pop_error_1' FAILED at time: 550ns (28 clk), ../src/fifo_rtl2.sv(67), scope: top.dut, start-time: 550ns (28 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 550ns (28 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 530ns (27 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 550ns (28 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 530ns (27 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 550ns (28 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 550ns (28 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 550ns (28 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 550ns (28 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 550ns (28 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 550ns (28 clk)
+# KERNEL: Error: Assertion 'ap_pop_error' FAILED at time: 550ns (28 clk), ../src/fifo_if.sv(89), scope: top.b_if, start-time: 550ns (28 clk)
+# KERNEL: Error: Assertion 'a_illegal_fifo_cmd_1' FAILED at time: 550ns (6 clk), ../src/fifo_rtl2.sv(115), scope: fifo_tb.fifo_rtl_1, start-time: 550ns (6 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 550ns (6 clk), ../src/fifo_props.sv(85), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 550ns (6 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 550ns (6 clk), ../src/fifo_props.sv(88), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 550ns (6 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 550ns (6 clk), ../src/fifo_props.sv(90), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 550ns (6 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 570ns (29 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 550ns (28 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 570ns (29 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 550ns (28 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 570ns (29 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 570ns (29 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 570ns (29 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 570ns (29 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 570ns (29 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 570ns (29 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 590ns (30 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 570ns (29 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 590ns (30 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 570ns (29 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 590ns (30 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 590ns (30 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 590ns (30 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 590ns (30 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 590ns (30 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 590ns (30 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 610ns (31 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 590ns (30 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 610ns (31 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 590ns (30 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 610ns (31 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 610ns (31 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 610ns (31 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 610ns (31 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 610ns (31 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 610ns (31 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 630ns (32 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 610ns (31 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 630ns (32 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 610ns (31 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 630ns (32 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 630ns (32 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 630ns (32 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 630ns (32 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 630ns (32 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 630ns (32 clk)
+# KERNEL: 650.000 ns fifo_tb.b_if.push_task Push data b 
+# KERNEL: Error: Assertion 'ap_pop_error_1' FAILED at time: 650ns (33 clk), ../src/fifo_rtl2.sv(67), scope: top.dut, start-time: 650ns (33 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 650ns (33 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 630ns (32 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 650ns (33 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 630ns (32 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 650ns (33 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 650ns (33 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 650ns (33 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 650ns (33 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 650ns (33 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 650ns (33 clk)
+# KERNEL: Error: Assertion 'ap_pop_error' FAILED at time: 650ns (33 clk), ../src/fifo_if.sv(89), scope: top.b_if, start-time: 650ns (33 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 650ns (7 clk), ../src/fifo_props.sv(88), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 650ns (7 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 650ns (7 clk), ../src/fifo_props.sv(90), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 650ns (7 clk)
+# KERNEL: 670.000 ns top.b_if.push_task Push data ffffffea 
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 670ns (34 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 650ns (33 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 670ns (34 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 650ns (33 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 670ns (34 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 670ns (34 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 670ns (34 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 670ns (34 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 670ns (34 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 670ns (34 clk)
+# KERNEL: 690.000 ns top.b_if.push_task Push data fffffff2 
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 690ns (35 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 670ns (34 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 690ns (35 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 670ns (34 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 690ns (35 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 690ns (35 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 690ns (35 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 690ns (35 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 710ns (36 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 690ns (35 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 710ns (36 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 690ns (35 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 710ns (36 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 710ns (36 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 710ns (36 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 710ns (36 clk)
+# KERNEL: Error: Assertion 'ap_pop_error_1' FAILED at time: 730ns (37 clk), ../src/fifo_rtl2.sv(67), scope: top.dut, start-time: 730ns (37 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 730ns (37 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 710ns (36 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 730ns (37 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 710ns (36 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 730ns (37 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 730ns (37 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED at time: 730ns (37 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 710ns (36 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED at time: 730ns (37 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 690ns (35 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 730ns (37 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 730ns (37 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 730ns (37 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 730ns (37 clk)
+# KERNEL: Error: Assertion 'ap_pop_error' FAILED at time: 730ns (37 clk), ../src/fifo_if.sv(89), scope: top.b_if, start-time: 730ns (37 clk)
+# KERNEL: 750.000 ns fifo_tb.b_if.push_task Push data de8e28bd 
+# KERNEL: Error: Assertion 'ap_pop_error_1' FAILED at time: 750ns (38 clk), ../src/fifo_rtl2.sv(67), scope: top.dut, start-time: 750ns (38 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' COMPLETED at time: 750ns (38 clk), ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 730ns (37 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' COMPLETED at time: 750ns (38 clk), ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 730ns (37 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' COMPLETED VACUOUSLY at time: 750ns (38 clk), ../src/fifo_props.sv(85), scope: top.dut.fifo_props_1, start-time: 750ns (38 clk)
+# KERNEL: Warning: Cover 'c_qEmpty' COMPLETED at time: 750ns (38 clk), ../src/fifo_props.sv(88), scope: top.dut.fifo_props_1, start-time: 750ns (38 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 750ns (38 clk), ../src/fifo_props.sv(90), scope: top.dut.fifo_props_1, start-time: 750ns (38 clk)
+# KERNEL: Error: Assertion 'ap_pop_error' FAILED at time: 750ns (38 clk), ../src/fifo_if.sv(89), scope: top.b_if, start-time: 750ns (38 clk)
+# KERNEL: Warning: Cover 'c_qAlmost_empty' COMPLETED at time: 750ns (8 clk), ../src/fifo_props.sv(90), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 750ns (8 clk)
+# KERNEL: UVM_INFO @ 770.000 ns: Go2UVM [Go2UVM] End of stimulus
+# KERNEL: UVM_INFO @ 770.000 ns: Go2UVM [Go2UVM] Thanks for using CVC's Go2UVM Package, provide your feedback at http://www.go2uvm.org
+# KERNEL: 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :    5
+# KERNEL: UVM_WARNING :    1
+# KERNEL: UVM_ERROR :    0
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [Go2UVM]     4
+# KERNEL: [Go2UVM ]     1
+# KERNEL: [RNTST]     1
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (433): $finish called.
+# KERNEL: Time: 770 ns,  Iteration: 69,  Instance: /top,  Process: @INITIAL#115_1@.
+# KERNEL: stopped at time: 770 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+quit
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' thread NOT FINISHED, ../src/fifo_props.sv(77), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 750ns (8 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' thread NOT FINISHED, ../src/fifo_props.sv(85), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 650ns (7 clk)
+# KERNEL: Warning: Cover 'cp_push_pop_sequencing' thread NOT FINISHED, ../src/fifo_props.sv(85), scope: fifo_tb.fifo_rtl_1.fifo_props_1, start-time: 750ns (8 clk)
+# KERNEL: Warning: Cover 'cp_t3_empty_1' thread NOT FINISHED, ../src/fifo_props.sv(72), scope: top.dut.fifo_props_1, start-time: 750ns (38 clk)
+# KERNEL: Warning: Cover 'cp_t4_aempty_1' thread NOT FINISHED, ../src/fifo_props.sv(77), scope: top.dut.fifo_props_1, start-time: 750ns (38 clk)
+# VSIM: Simulation has finished.

@@ -1,0 +1,19 @@
+UVM_INFO @ 0.00 ns: Go2UVM [Go2UVM] RELNOTES 
+
+----------------------------------------------------------------
+(C) 2004-2016 Verifworks a venture of CVC Pvt Ltd. 
+ VW_Go2UVM Version 1.1d.5 (Verifworks http://www.verifworks.com )
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the Go2UVM Package from VerifWorks 
+  a venture of CVC Pvt Ltd http://www.cvcblr.com
+  See http://www.verifworks.com for more details 
+
+----------------------------------------------------------------
+
+UVM_INFO @ 0.00 ns: reporter [RNTST] Running test ...
+UVM_INFO /home/student/shiva/may/coverted_ch2/cover_va/uvm/cover_va_go2uvm.sv(43) @ 0.00 ns: Go2UVM [Go2UVM] Start of reset
+UVM_INFO /home/student/shiva/may/coverted_ch2/cover_va/uvm/cover_va_go2uvm.sv(49) @ 55.00 ns: Go2UVM [Go2UVM] End of reset
+UVM_INFO @ 55.00 ns: Go2UVM [Go2UVM] Driving stimulus via UVM
+UVM_INFO /home/student/shiva/may/coverted_ch2/cover_va/uvm/cover_va_go2uvm.sv(52) @ 55.00 ns: Go2UVM [Go2UVM] Start of main
